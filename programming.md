@@ -12,8 +12,7 @@ Programming
 ###Algorithm - specific steps to solve a problem
   Pseudo-code and Flow-charts are code-agnostic ways to specify an algorithm to represent a process or to solve a problem
 
-
-###Modeling
+### Process or System Models
  - A representation of structure or process.
  - Identify components in a system.
  - Create a representation of that system using programming.(simulation)
