@@ -16,7 +16,7 @@ Programming
  - **Statements** - Like a sentence (a command) 
  - **Expressions** - evaluates to a value
  - **Functions** - a way to structure code to make it modular and to support code reuse
- - 
+
 
 ### Program Design and Modeling
  - A representation of structure or process.
