@@ -1,6 +1,9 @@
 {
     "plugins": [
-        "ace"
+        "ace",
+        "quiz",
+        "js-sequence-diagram",
+        "mermaid"
     ],
     "pluginsConfig": {}
 }
