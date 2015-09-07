@@ -15,4 +15,4 @@ The pushMatrix() function stores the current state of the transformation Matrix 
 
 Below is a simple example of how transforms can be used to create a simple character
 
-<a class="jsbin-embed" href="http://jsbin.com/zihatar/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
+<a class="jsbin-embed" href="http://jsbin.com/zihatar/edit?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
