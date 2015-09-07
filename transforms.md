@@ -12,3 +12,7 @@ The transformation ``matrix`` is a global table that stores the configuration in
 
 ###PushMatrix() / Pop Matrix()
 The pushMatrix() function stores the current state of the transformation Matrix in a **stack** structure.  Then the popMatrix() function can be used to retrieve the most recent state of the transformation matrix that was stored on the **stack**
+
+Below is a simple example of how transforms can be used to create a simple character
+
+<a class="jsbin-embed" href="http://jsbin.com/zihatar/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
