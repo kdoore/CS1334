@@ -1,3 +1,3 @@
 HSB Colormode
 
-The Processing HSB colormode provides a powerful option for using colors as a design element in our programs.  With RGB colors, it's difficult to understand how to 
+The Processing HSB colormode provides a powerful option for using color as design features in our programs.  When working with RGB colors, it can be difficult to determine how to modify an RGB value using code, in order to create designed color transitions.  However, The HSB colormode allows programmatic control over the Hue, Saturation, and Brightness of colors. For example, a user-interaction can be used to trigger a decrease in Brightness, as an easy way add hover-type behaviors to button shapes. 
