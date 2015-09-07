@@ -11,3 +11,4 @@ Transformations are functions that can be used to change the physical configurat
 The transformation ``matrix`` is a global table that stores the configuration information of the canvas.  The default values for the matrix can always be reset by calling the function: ``resetMatrix()``.  This resets the canvas so the origin is at the upper left corner, and insures that there's no rotation or scaling.
 
 ###PushMatrix() / Pop Matrix()
+The pushMatrix() function stores the current state of the transformation Matrix in a **stack** structure.  Then the popMatrix() function can be used to retrieve the most recent state of the transformation matrix that was stored on the **stack**
