@@ -7,8 +7,6 @@ To create a simple colorwheel, we can use the arc() function, in conjunction wit
 
 The arc() function takes 6 parameters: x, y, w,h ,startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default, while for other Processing.org programs, radians is the default angular measurement mode. 
 
-First, we can move the canvas origin to the center of the canvas, then we'll call 
-
 
 ```
 //Let's make a color wheel by mapping HSB values to arc() //segments that are positioned radially around the center.
@@ -51,3 +49,5 @@ arc(0,0,300,300,startDegree,endDegree); //first arc
     
 }
 ```
+
+<a class="jsbin-embed" href="http://jsbin.com/boxepu/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
