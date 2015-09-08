@@ -1,5 +1,5 @@
-Programming
-============
+##Programming: Javascript and Processing
+
 
 1. A sequence of instructions for a computer system to execute
 
@@ -14,7 +14,7 @@ Programming
   
 ###Program Instructions
  - **Statements** - Like a sentence (a command) 
- - **Expressions** - evaluates to a value
+ - **Expressions** - evaluate to a single value
  - **Functions** - a way to structure code to make it modular and to support code reuse
 
 
