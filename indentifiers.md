@@ -5,6 +5,11 @@ An identifier is a user defined name that can be used for user-created variables
 - identifiers cannot contain white-space or blank spaces
 - javascript is case-sensitive: `myValue` and `Myvalue` are not equivalent
 
-<question>
-
-</question>
+{%mcq ans='o2', random=true %}
+{%title%} Identifiers:  Which of the following identifier names is valid
+{%o1%} 1stPlace
+{%o2%} _1stPlace
+{%o3%} first-place
+{%o4%} first Place
+{%hint%} Identifiers can only contain letters, numbers, and the underscore character.  The first character must be an underscore or a letter.  Identifiers cannot contain spaces.
+{%endmcq%}
