@@ -1,0 +1,1 @@
+This section will contain definitions and examples of javascript syntax rules that must be followed when creating programs.
