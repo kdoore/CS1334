@@ -16,4 +16,7 @@ The code above creates a variable by declaring the keyword: var, followed by the
 
 ###Variable Types
 
-Javascript in a **loosely-typed** programming language. This is in contrast to most other programming languages which are **strongly-typed**.  In **strongly-typed** languages, when we want to declare a variable, we must first specify the **data-type** that we want to use.  When we write programs, we 
+Javascript in a **loosely-typed** programming language. The type of a variable is determined dynamically, based on the value currently assigned to the variable.  A variable can be assigned different types of values throughout a program. This is in contrast to most other programming languages like Java or C++, which are **strongly-typed**.  In **strongly-typed** languages, when we want to declare a variable, we must first specify the **data-type** that we want to use.
+
+var mySpecialValue = 5;   //assigned a numeric type
+mySpecialValue="hello";   //a string has now been assigned to the same variable
