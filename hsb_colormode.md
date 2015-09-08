@@ -1,11 +1,11 @@
 #HSB Color Mode
 
-The Processing HSB colormode provides a powerful option for using color as design features in our programs.  When working with RGB colors, it can be difficult to determine how to modify an RGB value using code, in order to create designed color transitions.  However, The HSB colormode allows programmatic control over the Hue, Saturation, and Brightness of colors. For example, a user-interaction can be used to trigger a decrease in Brightness, as an easy way add hover-type behaviors to button shapes. 
+The Processing HSB colormode provides a powerful option for using color as design features in our programs.  When working with RGB colors, it can be difficult to determine how to modify an RGB value using code, for example how can we modify an RGB value to get a slightly darker shade of the current fill color?  However, The HSB colormode allows programmatic control over the Hue, Saturation, and Brightness of colors. For example, a user-interaction can be used to trigger a decrease in Brightness, as an easy way add hover-type behaviors to button shapes. 
 
 ###Color Wheel
-To create a simple colorwheel, we can use the arc() function, in conjunction with the HSB colorMode().
+To create a simple color-wheel, we can use the arc() function, in conjunction with the HSB colorMode().
 
-The arc() function takes 6 parameters: x, y, w,h ,startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default, while for other Processing.org programs, radians is the default angular measurement mode. So, in the jsbin code example, all angle measurements are wrapped in the radians( ) function.
+The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default, while for other Processing.org programs, radians is the default angular measurement mode. So, in the jsbin code example, all angle measurements are wrapped in the ``radians( )`` function.
 
 
 ```
