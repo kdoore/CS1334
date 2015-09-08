@@ -23,4 +23,5 @@ Javascript in a **loosely-typed** programming language. The type of a variable i
 var mySpecialValue = 5;   //assigned a numeric type
 mySpecialValue="hello";   //a string has now been assigned to the same variable
 ```
-#Primitive Variable Types
+###Primitive Variable Types
+
