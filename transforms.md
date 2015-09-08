@@ -13,6 +13,8 @@ The transformation ``matrix`` is a global table that stores the configuration in
 ###PushMatrix() / Pop Matrix()
 The `pushMatrix()` function stores the current state of the transformation Matrix in a **stack** structure.  Then the `popMatrix()` function can be used to retrieve the most recent state of the transformation matrix that was stored on the **stack**
 
-Below is a simple example of how transforms can be used to create a simple character
+Below is a simple example of how transforms can be used to create a simple character, we can use pushMatrix() and popMatrix() to save and retrieve canvas configuration settings as noted in the image below.  pushMatrix and popMatrix are designed to be used together, you call pushMatrix when you know that you will want to return to the current configuration.  This is common when trying to create symmetry relative to a fixed reference point like the character's nose. 
+
+![](transforms.png)
 
 <a class="jsbin-embed" href="http://jsbin.com/zihatar/edit?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
