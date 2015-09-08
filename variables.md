@@ -16,4 +16,4 @@ The code above creates a variable by declaring the keyword: var, followed by the
 
 ###Variable Types
 
-Javascript in a **loosely-typed** programming language. This is in contrast to most other programming languages that are **strongly-typed**.  In **strongly-typed** languages, when we want to declare a variable, we must first specify the **data-type** that we want to use.  When we write programs, we 
+Javascript in a **loosely-typed** programming language. This is in contrast to most other programming languages which are **strongly-typed**.  In **strongly-typed** languages, when we want to declare a variable, we must first specify the **data-type** that we want to use.  When we write programs, we 
