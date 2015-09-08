@@ -6,9 +6,20 @@ The keyword ```var``` is used to tell the computer that the next word in the pro
 
 **Declare and initialize a variable:**
 
-```var mySpecialValue = 5; ```
+```
+var mySpecialValue;  //declare a variable
+    mySpecialValue=5;  //assign an integer literal to the variable
+```
 
 ```mySpecialValue = 15;```
 
 The code above creates a variable ```mySpecialVariable```, and assigns the value 5 to it. The second line of code changes the value stored in the memory location: ``mySpecialVariable``  to 15.  
+
+###Identifiers 
+An identifier is a user defined name that can be used for user-created variables or functions, there are specific syntax rules for identifier names:
+- identifiers can only contain: letters, numbers, or the underscore character
+- identifiers must start with a letter or an underscore (not with a number)
+- identifiers cannot contain white-space or blank spaces
+- 
+
 
