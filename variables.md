@@ -12,4 +12,4 @@ var mySpecialValue;  //declare a variable
     mySpecialValue = 15; //assign a new value to the variable
     ```
 
-The code above creates a variable by declaring the keyword: var, followed by the identifier name  ``mySpecialVariable``. In the next statement, we assigns the value 5 to the variable. The third line of code changes the value stored in the memory location: ``mySpecialVariable``  to 15.  
+The code above creates a variable by declaring the keyword: var, followed by the identifier name  ``mySpecialValue``. In the next statement, we assigns the value 5 to the variable. The third line of code changes the value stored in the memory location: ``mySpecialValue``  to 15.  
