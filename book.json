@@ -3,7 +3,8 @@
         "ace",
         "quiz",
         "js-sequence-diagram",
-        "mermaid"
+        "mermaid",
+        "mcqx"
     ],
     "pluginsConfig": {}
 }
