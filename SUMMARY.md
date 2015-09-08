@@ -6,5 +6,5 @@
    * [Javascript: Variables](javascript_variables.md)
    * [HSB ColorMode](hsb_colormode.md)
    * [Transforms](transforms.md)
-* Javascript Syntax
+* [Javascript Syntax](javascript_syntax.md)
 
