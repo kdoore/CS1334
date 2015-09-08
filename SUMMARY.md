@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Programming](programming.md)
 * [Javascript and Processing.js](chapter1.md)
    * [Programming](programming.md)
    * [HSB ColorMode](hsb_colormode.md)
