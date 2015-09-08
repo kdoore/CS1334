@@ -3,4 +3,8 @@ An identifier is a user defined name that can be used for user-created variables
 - identifiers can only contain: letters, numbers, or the underscore character
 - identifiers must start with a letter or an underscore (not with a number)
 - identifiers cannot contain white-space or blank spaces
-- javascript is case sensitive:  
+- javascript is case-sensitive: `myValue` and `Myvalue` are not equivalent
+
+<question>
+
+</question>
