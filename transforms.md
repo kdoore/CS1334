@@ -17,4 +17,8 @@ Below is a simple example of how transforms can be used to create a simple chara
 
 ![](transforms.png)
 
+[Link to Khan Academy Code for project above.](https://www.khanacademy.org/computer-programming/translate-class5/4754687965396992)
+
+[Link to In Class example: Khan Academy Program with Transforms](https://www.khanacademy.org/computer-programming/transformations-pushmatrix-popmatrix/5558061535199232)
+
 <a class="jsbin-embed" href="http://jsbin.com/zihatar/edit?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
