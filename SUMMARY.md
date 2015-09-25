@@ -8,7 +8,7 @@
 * [Programming](programming.md)
 * [HSB ColorMode](hsb_colormode.md)
 * [Transforms](transforms.md)
-* Animation
+* [Animation](animation.md)
 * Functions
 * Variable Scope
 * Conditional Branching:  If, Else
