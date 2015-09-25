@@ -8,4 +8,5 @@
 * [Programming](programming.md)
 * [HSB ColorMode](hsb_colormode.md)
 * [Transforms](transforms.md)
+* Animation
 
