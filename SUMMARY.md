@@ -8,8 +8,8 @@
 * [Programming](programming.md)
 * [HSB ColorMode](hsb_colormode.md)
 * [Transforms](transforms.md)
-* [Animation](animation.md)
+* [Animation: Draw Loop](animation.md)
 * [Functions](functions.md)
-* [Variable Scope](variable_scope.md)
+* [Variable Scope: Global or Local](variable_scope.md)
 * [Conditional Branching:  If, Else](conditional_branching_if_,_else.md)
 
