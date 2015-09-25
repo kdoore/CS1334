@@ -10,4 +10,5 @@
 * [Transforms](transforms.md)
 * Animation
 * Functions
+* Variable Scope
 
