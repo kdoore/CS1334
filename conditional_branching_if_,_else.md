@@ -1,5 +1,11 @@
 #Conditional Branching:  if, else
 
-Up until now, our programs have been structured as a sequence of statements that are executed in the sequence that the code is ordered in our programs, we have relied on sequential program structure.   
+###Default Mode:  Sequential Execution
+Up until now, our programs have been structured as a sequence of statements that are executed in the order that the code is arranged in our programs, we have relied on sequential program structure.   In order to create more sophisticated programs, we need to utilize conditional branching structure in our programs.
 
-![](Branching.png)
+![](sequence.png)
+
+###Conditional Branching Structure
+The structure and logic of conditional branching mirrors the process that we all instinctively use, we make decisions.  What we might not realize is the  
+
+![](branching3.png)
