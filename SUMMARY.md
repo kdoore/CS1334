@@ -10,6 +10,6 @@
 * [Transforms](transforms.md)
 * [Animation](animation.md)
 * [Functions](functions.md)
-* Variable Scope
+* [Variable Scope](variable_scope.md)
 * Conditional Branching:  If, Else
 
