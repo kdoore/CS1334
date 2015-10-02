@@ -52,15 +52,16 @@ arc(0,0,300,300,startDegree,endDegree); //first arc
 
 while( startDegree <360 ){
  
-startDegree=startDegree+angleSlice;  //termination, we know that startDegree keeps incrementing and will eventually be larger than 360
-endDegree=endDegree+angleSlice;
-hueValue=(startDegree / 360) * 255;
-// keep changing hue value, use that to color each arc
-fill(hueValue, 255, 255);
-//arc(x,y,w,h,start,stop)
-arc(0,0,300,300,startDegree,endDegree); //first arc
+    startDegree=startDegree+angleSlice;  //termination, we know that startDegree keeps incrementing and will eventually be larger than 360
+    endDegree=endDegree+angleSlice;
+    hueValue=(startDegree / 360) * 255;
+    // keep changing hue value, use that to color each arc
+    fill(hueValue, 255, 255);
+    //arc(x,y,w,h,start,stop)
+    arc(0,0,300,300,startDegree,endDegree); //first arc
     
-}
+} // end while-loop
+
 ```
 
 <a class="jsbin-embed" href="http://jsbin.com/boxepu/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
