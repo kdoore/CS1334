@@ -21,7 +21,7 @@ To create a simple color-wheel, we can use the arc() function, in conjunction wi
 The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default, while for other *Processing.org* programs, radians is the default angular measurement mode. So, in the jsbin code example, all angle measurements are wrapped in the ``radians( )`` function to convert our angle degree value into the equivalent radians value.
 
 
-```
+```java
 //Let's make a color wheel by mapping HSB values to arc() //segments that are positioned radially around the center.
 //HSB colors represent a color wheel with 0 degrees=red, 120 //degrees=green, 240 degrees=blue
 //we need to match the arc startDegree to the correct HSB 
