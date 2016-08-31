@@ -63,5 +63,3 @@ while( startDegree <360 ){
 } // end while-loop
 
 ```
-
-<a class="jsbin-embed" href="http://jsbin.com/boxepu/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
