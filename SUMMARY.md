@@ -5,6 +5,7 @@
 * [Javascript Syntax](javascript_syntax.md)
    * [Variables](variables.md)
    * [Indentifiers](indentifiers.md)
+* Numerical Operator Shortcuts
 * [Programming](programming.md)
 * [HSB ColorMode](hsb_colormode.md)
 * [Transforms](transforms.md)
@@ -12,5 +13,4 @@
 * [Functions](functions.md)
 * [Variable Scope: Global or Local](variable_scope.md)
 * [Conditional Branching:  If, Else](conditional_branching_if_,_else.md)
-* Numerical Operator Shortcuts
 
