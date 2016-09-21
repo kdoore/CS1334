@@ -5,7 +5,7 @@
 * [Javascript Syntax](javascript_syntax.md)
    * [Variables](variables.md)
    * [Indentifiers](indentifiers.md)
-* [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
+* [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
 * [Programming](programming.md)
 * [HSB ColorMode](hsb_colormode.md)
 * [Transforms](transforms.md)
