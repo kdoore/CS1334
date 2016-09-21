@@ -1,4 +1,4 @@
-# Variable Modification Shortcuts
+# Variable Math Operator Shortcuts
 
 Some Numerical Operations are so common that many languages provide shortcut syntax.  
 
