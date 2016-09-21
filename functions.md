@@ -2,8 +2,21 @@
 Functions allow us to create modular sections of code to add structure and organization to our code.  We can name these chunks of code, which makes it easy to **call** the functions so they can execute in the desired order.  We have been using, or *calling* functions that are part of the Processing Library.  But now we'll learn how to write our own custom functions.  Therefore we need to understand function syntax for javascript.
 
 ###Function Definition
+The following are terminology for the specification of a function:
 
+1. Function Name
+2. Function Input Parameters
+3. Function Body
+4. Function Return Value
 
+var myFunctionName = function ( param1, param2){
+  // function body has code statements
+  
+    var someReturnValue = 1;  //local variable to function
+
+    return someReturnValue;
+
+}
 
 
 ###Function Overloading
