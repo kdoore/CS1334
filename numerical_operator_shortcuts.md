@@ -1,6 +1,7 @@
 # Variable Math Operator Shortcuts
 
-Some Numerical Operations are so common that many languages provide shortcut syntax.  
+Some Math Operations are so common that many languages provide shortcut syntax, for example:
+x = x + 1;   can also be written as  x++, or as x += 1;
 
 When modifying the value of a variable based on the current value of the variable, the syntax for addition would be:
 
