@@ -9,15 +9,24 @@ The following are terminology for the specification of a function:
 3. Function Body
 4. Function Return Value
 
+
+```javascript
+
 var myFunctionName = function ( param1, param2){
-  // function body has code statements
-  
+  // function body has code statements in the function body
+    rect(param1, param2, 50,50);  //use input parameters
     var someReturnValue = 1;  //local variable to function
 
     return someReturnValue;
-
 }
 
+// execute the function
+myFunctionName( 10,20); 
 
+//execute the function and store the returned value
+var retVal = myFunctionName( 30,30);
+println( "Returned value " + retVal);  //retVal = 1
+
+```
 ###Function Overloading
 Function Overloading refers to when 2 or more functions are defined that use the same function name, but use a different number of function input parameters.  Function overloading provides convenience to users of your functions, because it recognizes that sometimes it is nice to be able to specify more details that can be used in the function execution.  Each Function that is overloaded has it's own function definition.  We have used overloaded functions when we've used the fill() function:  fill(r,g,b), fill(r,g,b,a), fill(grayscale);    
