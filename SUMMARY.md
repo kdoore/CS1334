@@ -13,4 +13,5 @@
 * [Functions](functions.md)
 * [Variable Scope: Global or Local](variable_scope.md)
 * [Conditional Branching:  If, Else](conditional_branching_if_,_else.md)
+* Logical Operators
 
