@@ -15,7 +15,7 @@ The logical operators are described in the following table:
 | Operator | Usage | Description|
 | -- | -- | -- |
 | Logical AND (&&) | expr1 && expr2 | Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, && returns true if both operands are true; otherwise, returns false. |
-| Logical OR  | expr1 $$||$$ expr2  | Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, OR returns true if either operand is true. |
+| Logical OR ( $$||$$ )  | expr1 $$||$$ expr2  | Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, OR returns true if either operand is true. |
 | Logical NOT (!)| !expr| Returns false if its single operand can be converted to true; otherwise, returns true.|
 
 
