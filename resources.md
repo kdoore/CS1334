@@ -6,7 +6,13 @@
 
 #### CodePen -[ http://codepen.io/kdoore/](http://codepen.io/kdoore/)
 
+## **Books: **
 
+[Generative Design](http://www.papress.com/html/product.details.dna?isbn=9781616890773)
+
+Visualize, Program, and Create with Processing
+
+ Authors: Hartmut Bohnacker, Benedikt Gross, Julia Laub, Claudius Lazzeroni
 
 
 
