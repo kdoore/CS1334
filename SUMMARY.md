@@ -10,10 +10,9 @@
   * [Variable Scope: Global or Local](variable_scope.md)
   * [Functions](functions.md)
 * [Processing Functions](processing-functions.md)
-  * Shape Primitive Functions
+  * [Shape Primitive Functions](shape-primitive-functions.md)
   * [HSB ColorMode](hsb_colormode.md)
   * [Animation: Draw Loop](animation.md)
   * [Transforms](transforms.md)
-
 * [Resources](resources.md)
 
