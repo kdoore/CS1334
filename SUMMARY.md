@@ -11,8 +11,9 @@
 * [Functions](functions.md)
 * [Variable Scope: Global or Local](variable_scope.md)
 * [Conditional Branching:  If, Else](conditional_branching_if_,_else.md)
-* [Resources](resources.md)
+
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
   * [Indentifiers](indentifiers.md)
 
+* [Resources](resources.md)
