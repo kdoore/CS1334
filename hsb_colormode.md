@@ -21,7 +21,6 @@ To create a simple color-wheel, we can use the arc() function, in conjunction wi
 The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default.
 
 
-```javascrip
 
 ```javascript
 
