@@ -22,7 +22,7 @@ The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegr
 
 
 
-```javascript
+```java
 
 //setup
 
