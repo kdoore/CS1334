@@ -14,9 +14,6 @@
   * [HSB ColorMode](hsb_colormode.md)
   * [Animation: Draw Loop](animation.md)
   * [Transforms](transforms.md)
-* [Javascript Syntax](javascript_syntax.md)
-  * [Variables](variables.md)
-  * [Indentifiers](indentifiers.md)
-  * [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
+
 * [Resources](resources.md)
 
