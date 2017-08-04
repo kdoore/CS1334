@@ -9,14 +9,14 @@ A variables can be considered a named memory container where the programmer can 
 
 To create a variable, we use the keyword **var**, followed by the name that we'll use as a label to access that value.
 
-  `var mySpecialValue;  //declare a variable ` 
+      `var mySpecialValue;  //declare a variable ` 
 
 This _varible-name_ acts as a label to identify an area in the computer's memory where the value will be stored, so the programmer can access and modify the value throughout the program. 
 
 **Declare and initialize a variable:**
 
 ```java
-var mySpecialValue;  //declare a variable
+    var mySpecialValue;  //declare a variable
     mySpecialValue=5;  //assign a value of 5
     mySpecialValue = 15 * 2; //re-assign a new value to the variable
 ```
