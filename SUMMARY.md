@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Programming](programming.md)
+* Algorithm
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
@@ -15,4 +16,5 @@
   * [Animation: Draw Loop](animation.md)
   * [Transforms](transforms.md)
 * [Resources](resources.md)
+
 
