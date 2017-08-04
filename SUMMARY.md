@@ -9,7 +9,7 @@
   * [Indentifiers](indentifiers.md)
   * [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
   * [Variable Scope: Global or Local](variable_scope.md)
-  * [Processing](processing-functions.md)
+* [Processing](processing-functions.md)
     * [Shape Primitive Functions](shape-primitive-functions.md)
     * [HSB ColorMode](hsb_colormode.md)
     * [Animation: Draw Loop](animation.md)
