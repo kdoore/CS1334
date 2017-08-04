@@ -1,10 +1,10 @@
-## Computer Programming: Javascript and Processing
+## Programming with Javascript and Processing
 
-1. A sequence of instructions for a computer system to execute
+1. **What is a Programming?**  Programming is the process of writing a sequence of instructions for a computer system to execute, in order to solve a problem or complete a task.
 
-2. Programming Languages like _**Javascript**_ define ‘syntax’ of how to write instructions
+2. **What is Javascript?** Programming Languages like _**Javascript**_ define ‘syntax’ of how to write instructions that are simple enough to be executed by a computer.
 
-3. Programming Libraries like _**Processing.js**_ provide pre-written functions for common tasks
+3. **What is a Programming Library? ** Programming libraries like _**Processing.js**_ provide pre-written functions for common tasks.  
 
 4. A Script or Program is a series of instructions translated into a strict, formal language - simple enough for a computer to interpret or execute.
 
@@ -18,7 +18,10 @@
 
 ### Algorithm - specific steps to solve a problem
 
-Pseudo-code and Flow-charts are code-agnostic ways to specify an algorithm to represent a process or to solve a problem
+An algorithm is a specific sequence of discrete steps to solve a problem or define a process. 
+
+
+Pseudo-code and Flow-charts are code-agnostic ways to specify an algorithm to represent a process or to solve a problem.
 
 ### Program Instructions
 
