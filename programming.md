@@ -16,12 +16,6 @@
 
    2. a byte can hold 256 possible values \(0 - 255\)
 
-### Algorithm - specific steps to solve a problem
-
-An algorithm is a specific sequence of discrete steps to solve a problem or define a process. 
-
-
-Pseudo-code and Flow-charts are code-agnostic ways to specify an algorithm to represent a process or to solve a problem.
 
 ### Program Instructions
 
