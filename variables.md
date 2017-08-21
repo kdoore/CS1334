@@ -3,11 +3,9 @@
 **Variables** 
 Variables provide a way for us to store a value that we can modify and use throughout a program.
 
-Variables 
-
 A variables can be considered a named memory container where the programmer can store values that will be changing in their programs.
 
-To create a variable, we use the keyword **var**, followed by the name that we'll use as a label to access that value.
+To create a variable in javascript, we use the keyword **var**, followed by the name that we'll use as a label to access that value, this is referred to as _declaring a variable._
 
       `var mySpecialValue;  //declare a variable ` 
 
@@ -21,7 +19,9 @@ This _varible-name_ acts as a label to identify an area in the computer's memory
     mySpecialValue = 15 * 2; //re-assign a new value to the variable
 ```
 
-The code above creates a variable by declaring the keyword: var, followed by the identifier name  `mySpecialValue`. In the next statement, we assigns the value 5 to the variable. The third line of code changes the value stored in the memory location: `mySpecialValue`  to the result of the evaluation of the expression: 15 \* 2.
+The first line of code above, creates a variable by declaring the keyword: var, followed by the identifier name  `mySpecialValue`. 
+
+In the next statement, we assigns the value 5 to the variable. The third line of code changes the value stored in the memory location: `mySpecialValue`  to the result of the evaluation of the expression: 15 \* 2.
 
 ### Variable Types
 
