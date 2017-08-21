@@ -27,9 +27,8 @@ In the next statement, we assigns the value 5 to the variable. The third line of
 
 Javascript in a **loosely-typed** programming language. The type of a variable is determined dynamically, based on the value currently assigned to the variable.  A variable can be assigned different types of values throughout a program. This is in contrast to most other programming languages like Java or C++, which are **strongly-typed**.  In **strongly-typed** languages, when we want to declare a variable, we must first specify the **data-type** that we want to use.
 
-* Variable Types:   
-* 
-### Dynamically Determined Variable Type
+
+ **Dynamically determined variable type:**
 
 ```java
 var mySpecialValue = 5;   //assigned a numeric type
