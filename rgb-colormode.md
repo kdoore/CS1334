@@ -6,4 +6,8 @@ The image below shows the RGB Additive Color Model.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/240px-AdditiveColor.svg.png)[wikipedia](https://commons.wikimedia.org/wiki/File%3AAdditiveColor.svg)
 
+Processing uses RGB Color Model by default for both the fill and stroke functions.
 
+fill( red, green , blue);  // function syntax 
+
+Values for the R,G, and B parameters in the range of 0-255 provide a wide range of colors:  Each color has 256 possible values, this results in 256 * 256 *256 = 16.7 million colors, depending on the hardware of the display. 
