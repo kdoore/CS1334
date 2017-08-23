@@ -21,7 +21,9 @@
 
 * **Statements** - Like a sentence \(a command\)
 * **Expressions** - evaluate to a single value
-* **Functions** - a way to structure code to make it modular and to support code reuse
+* **Functions** - a way to structure code to make it modular and to support code reuse,
+
+Functions can be used as program statements or expressions if they return a value.
 
 ### Program Design and Modeling
 
