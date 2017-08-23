@@ -10,4 +10,6 @@ Processing uses RGB Color Model by default for both the fill and stroke function
 
 fill( red, green , blue);  // function syntax 
 
-Values for the R,G, and B parameters in the range of 0-255 provide a wide range of colors:  Each color has 256 possible values, this results in 256 * 256 *256 = 16.7 million colors (24-bit color), depending on the hardware of the display. 
+Values for the R, G, B parameters have a range of 0-255, this provide a wide range of colors:  Since each color has 256 possible values, this results in 256 * 256 * 256 => 16.7 million colors (24-bit color), depending on the hardware of the display. 
+
+
