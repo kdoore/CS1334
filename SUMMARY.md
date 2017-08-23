@@ -12,6 +12,7 @@
   * [Variable Scope: Global or Local](variable_scope.md)
 * [Processing](processing-functions.md)
   * [Shape Primitive Functions](shape-primitive-functions.md)
+  * [RGB ColorMode](rgb-colormode.md)
   * [HSB ColorMode](hsb_colormode.md)
   * [Animation: Draw Loop](animation.md)
   * [Transforms](transforms.md)
