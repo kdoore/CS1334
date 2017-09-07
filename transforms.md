@@ -33,7 +33,7 @@ In the image below, we can look at 2 different approaches for animating ellipses
 The blue ellipse has ``xPos`` animated:
 
 
-    ```java
+```java
 
     //simplified code snippet
     var xPos=0;
@@ -44,11 +44,11 @@ The blue ellipse has ``xPos`` animated:
         xPos++;  //increment
     }
 
-    ```
+```
 
 The yellow ellipse is animated, through translation of the origin, and rotation around the origin, the ellipse is drawn at the origin:  ellipse( 0,0,100, 30);
     
-    ```java
+```java
 
     //simplified code snippet
     var xPos=0;
@@ -65,12 +65,13 @@ The yellow ellipse is animated, through translation of the origin, and rotation 
 
 ```
 
+
 [Link to example project](https://www.khanacademy.org/computer-programming/transforms-for-animated-rotation/6642382780170240)
 
 ![](/assets/Screenshot 2017-09-07 09.02.50.png)
 
 
-Below is a simple example of how transforms can be used to create a simple character, we can use pushMatrix\(\) and popMatrix\(\) to save and retrieve canvas configuration settings as noted in the image below.  pushMatrix and popMatrix are designed to be used together, you call pushMatrix when you know that you will want to return to the current configuration.  This is common when trying to create symmetry relative to a fixed reference point like the character's nose.
+Below is an example of how transforms can be used to create a simple character, we can use pushMatrix\(\) and popMatrix\(\) to save and retrieve canvas configuration settings as noted in the image below.  pushMatrix and popMatrix are designed to be used together, you call pushMatrix when you know that you will want to return to the current configuration.  This is common when trying to create symmetry relative to a fixed reference point like the character's nose.
 
 ![](transforms.png)
 
