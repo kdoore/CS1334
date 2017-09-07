@@ -39,11 +39,31 @@ The blue ellipse has ``xPos`` animated:
     var xPos=0;
 
     var draw=function(){
-        ellipse( xPos, 100, 100, 30); 
+        fill( 0,0,255); // blue
+        ellipse( xPos, 100, 30, 60); 
         xPos++;  //increment
     }
 
     ```
+
+The yellow ellipse is animated, through translation of the origin, and rotation around the origin, the ellipse is drawn at the origin:  ellipse( 0,0,100, 30);
+    
+    ```java
+
+    //simplified code snippet
+    var xPos=0;
+    var angle = 0;
+
+    var draw=function(){
+        fill( 255, 255,0);//yellow
+        translate(xPos, 200);
+        rotate( angle ); //rotate around origin
+        ellipse( 0, 0, 100, 60);  //drawn at origin
+        xPos++; //increment
+        angle++; //increment
+    }
+
+```
 
 [Link to example project](https://www.khanacademy.org/computer-programming/transforms-for-animated-rotation/6642382780170240)
 
