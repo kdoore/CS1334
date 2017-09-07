@@ -20,7 +20,7 @@ The resetMatrix\(\) function sets the origin back to the original, upper-left co
 
 The `pushMatrix()` function stores the current state of the transformation Matrix in a **stack** structure, it is like a snapshot is taken of the current transform values and that is saved for later use.  Then the `popMatrix()` function can be used to retrieve the most recent state of the transformation matrix that was stored on the **stack**
 
-**Example - Animated Position and Rotation**
+##Example - Animated Position and Rotation
 
 Rotate Ellipses 
 
