@@ -16,6 +16,7 @@
   * [HSB ColorMode](hsb_colormode.md)
   * [Animation: Draw Loop](animation.md)
   * [Transforms](transforms.md)
+  * [Animation using Transforms](animation-using-transforms.md)
   * [Functions](functions.md)
 * [Resources](resources.md)
 
