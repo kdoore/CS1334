@@ -31,11 +31,10 @@ In the image below, we can look at 2 different approaches for animating ellipses
 2.  Rotation of objects requires that the canvas origin must be moved to the center of the object, then rotate( angle) causes the canvas to rotate - around the object's center.  If ``angle`` is a global variable that's incremented, then rotation will be animated: ``angle++``
 
 The blue ellipse has ``xPos`` animated:
-
+   
 
 ```java
-
-    //simplified code snippet
+ //simplified code snippet
     var xPos=0;
 
     var draw=function(){
@@ -46,11 +45,14 @@ The blue ellipse has ``xPos`` animated:
 
 ```
 
+
+
+
 The yellow ellipse is animated, through translation of the origin, and rotation around the origin, the ellipse is drawn at the origin:  ellipse( 0,0,100, 30);
     
-```java
 
-    //simplified code snippet
+```java
+//simplified code snippet
     var xPos=0;
     var angle = 0;
 
@@ -62,8 +64,11 @@ The yellow ellipse is animated, through translation of the origin, and rotation 
         xPos++; //increment
         angle++; //increment
     }
-
 ```
+
+
+
+
 
 
 [Link to example project](https://www.khanacademy.org/computer-programming/transforms-for-animated-rotation/6642382780170240)
