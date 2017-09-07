@@ -28,7 +28,7 @@ In the image below, we can look at 2 different approaches for animating ellipses
 
 1. Animation requires use of the draw loop, and a global variable: ``xPos``, that's incremented within the draw loop: ``xPos++``
 
-2.  Rotation of objects requires that the canvas origin must be moved to the center of the object, then rotate( angle) causes the canvas to rotate - around the object's center.  If ``angle`` is a global variable that's incremented, then rotation will be animated: ``angle++``.
+2.  Rotation of objects requires that the canvas origin must be moved to the center of the object, then rotate( angle) causes the canvas to rotate - around the object's center.  If ``angle`` is a global variable that's incremented, then rotation will be animated: ``angle++``
 
 The blue ellipse has ``xPos`` animated:
 
