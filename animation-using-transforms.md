@@ -37,6 +37,7 @@ The yellow ellipse is animated, through translation of the origin, and rotation 
         translate(xPos, 200);
         rotate( angle ); //rotate around origin
         ellipse( 0, 0, 100, 60);  //drawn at origin
+        resetMatrix();
         xPos++; //increment
         angle++; //increment
     }
