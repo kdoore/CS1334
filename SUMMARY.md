@@ -10,6 +10,7 @@
   * [Indentifiers](indentifiers.md)
   * [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
   * [Variable Scope: Global or Local](variable_scope.md)
+  * [Variable Expressions and Operators](variable-expressions-math-operators.md)
 * [Processing](processing-functions.md)
   * [Shape Primitive Functions](shape-primitive-functions.md)
   * [RGB ColorMode](rgb-colormode.md)
