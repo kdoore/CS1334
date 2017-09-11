@@ -8,6 +8,8 @@
 
 ## **Books: **
 
+[Speaking Javascript: ](http://speakingjs.com/)
+
 [Generative Design](http://www.papress.com/html/product.details.dna?isbn=9781616890773)
 
 Visualize, Program, and Create with Processing
