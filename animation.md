@@ -59,6 +59,8 @@ var draw=function(){
 
 ###Incorrect use of increment shortcut operators
 In the example below, we're simply adding 1 to the current value of position before it's passed into the rectangle function, the stored value of the position variable has not changed and is still equal to 0.
+
+
 ```java
 
 var position = 0; //define global animation variable
