@@ -52,7 +52,7 @@ var position = 0; //define global animation variable
 
 var draw=function(){
       background(0)// black background
-      rect( position +1, position +1 , 50,50);
+      rect( position + 1, position + 1 , 50,50);
       }
       
 ```
@@ -66,7 +66,7 @@ var position = 0; //define global animation variable
 var draw=function(){
       background(0)// black background
       rect( position++, position-- , 50,50); //offest
-      println( "Position " + position);  // 0
+      println( "Position " + position);  // position == 0
       }
       
 ```
