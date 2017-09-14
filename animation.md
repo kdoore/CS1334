@@ -12,3 +12,53 @@ With other processing functions that we've used before, like ``rect(x, y, w, h)`
 5.  Call resetMatrix() at the end of each draw() function if you have modified any transformation properties since the default resetMatrix() may not be functioning correctly.
 6.  Set the background(R, G, B) as the first line of code in the draw() function if you want stop-frame type animation.  
 7.  If in colorMode(HSB), you may need to create a white ``fill(255)` rectangle the size of the canvas, since the background function doesn't always show the correct color.
+
+
+
+```java
+
+var position = 0; //define global animation variable
+
+var draw=function(){
+      background(0)// black background
+      rect( position, position, 50,50);
+      position++; //modify the animation variable in draw
+}
+      
+```
+
+###Possible Error Examples
+What are variations on the simple program above that will cause unintended problems?
+
+###Re-initialize animation variable before use
+```java
+
+var position = 0; //define global animation variable
+
+var draw=function(){
+      background(0)// black background
+      position = 0; //this means animation won't occur
+      rect( position, position, 50,50);
+      position++; //modify the animation variable in draw
+}
+      
+```
+
+###Incorrect modification of animation variable
+In the example below, we're simply adding 1 to the current value of position before it's passed into the rectangle function, the stored value of the position variable has not changed and is still equal to 0.
+```java
+
+var position = 0; //define global animation variable
+
+var draw=function(){
+      background(0)// black background
+      rect( position +1, position +1 , 50,50);
+      }
+      
+```
+
+
+
+  
+
+
