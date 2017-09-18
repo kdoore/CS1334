@@ -5,9 +5,9 @@ Functions allow us to create modular sections of code to add structure and organ
 The following are terminology for the specification of a function:
 
 1. Function Name
-2. Function Input Parameters
-3. Function Body
-4. Function Return Value
+2. Function Input Parameters - how we send values into a function
+3. Function Body - code statements within the function to do function task
+4. Function Return Value - how we can get a value out of a function
 
 ###Function Definition Code:
 
@@ -33,6 +33,11 @@ println( "Returned value " + retVal);  //retVal = 1
 The function signature refers to the function Name and Input Parameters, it's the first line of a function definition. The function Signature specifies the format that should be used when calling the function:
  
   FunctionName ( param1, param2 )  // function signature
+  
+###Calling a Function
+When we want to execute a function, we must provide values to match each input parameter defined in the function.  The values are used to initialize each function parameter value, which are used as local variables in the functions.  
+
+
 
 
 ###Function Overloading
