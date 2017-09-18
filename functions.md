@@ -32,13 +32,32 @@ println( "Returned value " + retVal);  //retVal = 1
 ###Function Signature:
 The function signature refers to the function Name and Input Parameters, it's the first line of a function definition. The function Signature specifies the format that should be used when calling the function:
  
-  FunctionName ( param1, param2 )  // function signature
+  FunctionName ( param1, param2 )  // function signature provides syntax for calling a function
+  
+  example:  
+  
+  `AddNumbers( num1, num2 );`// Function Signature
+  `AddNumbers( 5, 10 ); `   //call function
   
 ###Calling a Function
 When we want to execute a function, we must provide values to match each input parameter defined in the function.  The values are used to initialize each function parameter value, which are used as local variables in the functions.  
 
 
-
-
 ###Function Overloading
-Function Overloading refers to when 2 or more functions are defined that use the same function name, but use a different number of function input parameters.  Function overloading provides convenience to users of your functions, because it recognizes that sometimes it is nice to be able to specify more details that can be used in the function execution.  Each Function that is overloaded has it's own function definition.  We have used overloaded functions when we've used the fill() function:  fill(r,g,b), fill(r,g,b,a), fill(grayscale);    
+Function Overloading refers to when 2 or more functions are defined that use the same function name, but use a different number of function input parameters.  Function overloading provides convenience to users of your functions, because it recognizes that sometimes it is nice to be able to specify more details that can be used in the function execution.  Each Function that is overloaded has it's own function definition.  We have used overloaded functions when we've used the fill() function:  fill(r,g,b), fill(r,g,b,a), fill(grayscale);  
+
+###Example Write a function to draw 2-nested circles 
+
+
+  ```java
+
+  var draw2Circles( x, y, smallRadius, largeRadius){
+      ellipse( x, y, largeRadius, largeRadius);//draw large one first
+      ellipse( x, y, smallRadius, smallRadius);
+  }
+  
+  //call the function:
+  var size = 20;
+  draw2Circles( 10, 10, size, size + 50 );
+  
+  ```
