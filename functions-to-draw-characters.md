@@ -35,3 +35,27 @@ var drawTurtle = function(  bodyX, bodyY, headAngle, footAngle){
 };  
 
 ```
+
+###Calling the drawTurtle Function
+The code below shows how to call the drawTurtle function within the Processing draw( ) function by passing in parameter values that have been declared as global variables.  Eventually, we'll be able to animate the turtle by modifying the value of these global variables in the draw loop.
+
+We can see that the animation variables are passed directly into the drawTurtle function, then they will be passed into each of the functions where they are controlling animation.
+
+```java
+
+
+///GLOBAL VARIABLES
+{
+var bodyX=152;
+var bodyY=250;
+var headAngle=0;
+var footAngle = 8;
+}
+
+var draw= function() {
+  background(255, 255, 255);
+  drawTurtle(bodyX, bodyY,headAngle, footAngle);   
+
+};
+
+```
