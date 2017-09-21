@@ -19,13 +19,13 @@ var drawTurtle = function(  bodyX, bodyY, headAngle, footAngle){
     pushMatrix();
     translate( bodyX, bodyY);
     
-    drawHead( 91,-22,headAngle);
+    drawHead( 91,-22,headAngle); //draw before main body
     drawFoot(37,23, footAngle); //front foot
     drawFoot(-38,23, footAngle); //back foot
-    ///Draw the turtle body
+    
+    ///Draw the turtle body shapes
     fill(0, 255, 55);
     ellipse( 0,-18,189,99);
-    
     
    //center: (0,0), draw point of rotation
     fill(255, 0, 0);//red 
