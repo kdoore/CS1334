@@ -9,3 +9,28 @@ In the following description, we'll look at how to write code to create a simple
 
 [Example: Khan Academy Code - Turtle Character](https://www.khanacademy.org/computer-programming/turtle/5949969377984512)
 
+
+DrawTurtle Logic:
+
+```java
+
+///bodyX, bodyY determine character position
+var drawTurtle = function(  bodyX, bodyY, headAngle, footAngle){
+    pushMatrix();
+    translate( bodyX, bodyY);
+    
+    drawHead( 91,-22,headAngle);
+    drawFoot(37,23, footAngle); //front foot
+    drawFoot(-38,23, footAngle); //back foot
+    ///Draw the turtle body
+    fill(0, 255, 55);
+    ellipse( 0,-18,189,99);
+    
+    
+   //center: (0,0), draw point of rotation
+    fill(255, 0, 0);//red 
+    ellipse( 0,0,5,5);
+    popMatrix();
+};  
+
+```
