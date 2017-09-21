@@ -12,7 +12,8 @@ In the following description, we'll look at how to write code to create a simple
 [Example 2:  Turtle using multiple functions](https://www.khanacademy.org/computer-programming/turtle/5949969377984512)
 
 
-DrawTurtle Logic: 
+###DrawTurtle Logic - Using multiple functions: 
+
 The code below is the main function to create the  turtle. Within this function, other functions are called to create his sub-components.  The subcomponents, like feet and head have a dependency on the turtle body, whenever the body moves, the head and feet should also move.  This dependency is implemented by calling the drawHead, drawFoot functions after translate( x,y) has moved the origin to the turtle's center point.
 
 ```java
