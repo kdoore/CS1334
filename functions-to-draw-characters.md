@@ -7,7 +7,9 @@ In addition, we'll use the processing transform functions to translate the origi
 ###Example:  Turtle 
 In the following description, we'll look at how to write code to create a simple turtle - using functions to specify the overall turtle's design, with additional functions that define the subcomponents of the turtle, like the head or feet.
 
-[Example: Khan Academy Code - Turtle Character](https://www.khanacademy.org/computer-programming/turtle/5949969377984512)
+[Example 1:  Turtle in a Single Javascript Function ](https://www.khanacademy.org/computer-programming/turtle_version1/6054458239942656)
+
+[Example 2:  Turtle using multiple functions](https://www.khanacademy.org/computer-programming/turtle/5949969377984512)
 
 
 DrawTurtle Logic: 
