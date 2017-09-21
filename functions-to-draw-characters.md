@@ -59,3 +59,46 @@ var draw= function() {
 };
 
 ```
+
+###DrawHead( ) and DrawFoot functions
+
+```java
+//drawHead - headX, headY control position relative to the turtle body
+//headAngle - tilts the head at the rotation point
+var drawHead=function( headX, headY,headAngle ){
+    pushMatrix();
+    translate( headX, headY);
+    fill(183, 255, 0);//light green
+    rotate(headAngle); //rotate the head
+    ellipse( 16,-3,52,33);///draw head offset from the origin
+    fill(5, 5, 5);  //black
+    ellipse(15,-7,10,10); //eye
+    
+  //center: (0,0), point of rotation
+    fill(255, 0, 0);//red
+    ellipse( 0,0,5,5);
+    popMatrix();
+};
+
+
+//drawFoot, called from within drawTurtle
+//footX, footY control position relative to the turtle body
+//rotation occurs at point: footX, footY
+//center of foot ellipse is drawn offset from footX, footY 
+var drawFoot = function( footX, footY, footAngle){
+    pushMatrix();
+    translate( footX, footY);//move origin to foot position
+    rotate( footAngle);
+    fill(183, 255, 0);//light green
+    ellipse(0,16, 33,58); //foot with ellipse offset from 0,0
+    
+   //center: (0,0), point of rotation
+    fill(255, 0, 0);//red
+    ellipse( 0,0,5,5);
+    popMatrix();
+};
+
+
+
+
+```
