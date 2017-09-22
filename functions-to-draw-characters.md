@@ -12,7 +12,7 @@ In the first code example, we're putting all of the code in a single function.  
 
 [Example 1:  Turtle in a Single Javascript Function ](https://www.khanacademy.org/computer-programming/turtle_version1/6054458239942656)
 
-**Example 2: Several functions within drawTurtle( x, y);** It's not much more difficult to put the logic for the turtle's parts: head and foot, into their own functions, plus it will make our code more structured.  
+**Example 2: Several functions within drawTurtle( x, y);**  It's not much more difficult to put the logic for the turtle's parts: head and foot, into their own functions, plus it will make our code more structured.  
 
 [Example 2:  Turtle using multiple functions](https://www.khanacademy.org/computer-programming/turtle/5949969377984512)
 
