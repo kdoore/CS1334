@@ -7,12 +7,12 @@ In addition, we'll use the **Processing transform functions** to translate the o
 ###Example:  Turtle 
 In the following description, we'll look at how to write code to create a simple turtle - using functions to specify the overall turtle's design, with additional functions that define the subcomponents of the turtle, like the head or feet.
 
-Example 1:  One Function to drawTurtle - 
+**Example 1:  One function for drawTurtle( x, y )** - 
 In the first code example, we're putting all of the code in a single function.  We are going to use pushMatrix(), popMatrix() to isolate the rest of our code from any transforms that we do within those push/pop regions. 
 
 [Example 1:  Turtle in a Single Javascript Function ](https://www.khanacademy.org/computer-programming/turtle_version1/6054458239942656)
 
-Example 2:  It's not much more difficult to put the logic for the turtle's parts: head and foot, into their own functions, plus it will make our code more structured.  
+**Example 2: Several functions within drawTurtle( x, y);** It's not much more difficult to put the logic for the turtle's parts: head and foot, into their own functions, plus it will make our code more structured.  
 
 [Example 2:  Turtle using multiple functions](https://www.khanacademy.org/computer-programming/turtle/5949969377984512)
 
