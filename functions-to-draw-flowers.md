@@ -29,4 +29,33 @@ If we were to draw a flowering plant on paper, would we start with plant base or
 
 This is also true with programming, but we'll want to create a flexible program so we can draw all shapes and locations of the flower on the canvas.
 
-###
+###Draw A Flower - Start with lines for a stem.
+
+For code to draw a stem, we can use a line, we will want to reposition flowers, so the 2 line points must be function input parameters.  
+
+The function below draws 3 lines, with the middle line to hold the flower.
+
+
+```java
+
+var drawFlower = function( baseX, baseY, stemX, stemY){
+    
+    //start by drawing lines from the base to the stem points
+    
+    stroke(41, 133, 57);  //green
+    strokeWeight(10);
+    line(baseX,baseY, stemX-18, stemY+40);
+    line(baseX,baseY, stemX+18, stemY+10);
+    line(baseX,baseY, stemX, stemY);
+    
+    ///move the origin to the stemX, stemY point
+    pushMatrix();
+    translate( stemX, stemY);
+    rotate(angle); //placeholder - we might want to be able to rotate the flower before drawing it
+    drawFlower( ); //placeHolder until we get this code written
+    popMatrix();
+    
+}
+```
+
+
