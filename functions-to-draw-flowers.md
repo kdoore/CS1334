@@ -91,6 +91,7 @@ var drawFlower = function( stemX, stemY, centerX, centerY, flowerAngle){
 ```
 
 ###Draw Petal Logic
+The code below takes a section of a bezierVertex shape and puts it inside a function so we can determine where we want to draw petals.  If we add angle and scaleX, scaleY as input parameters to our function, then we can flip the flower petal.
 
 [Draw Petal Logic ](https://www.khanacademy.org/computer-programming/petallogic/6664207964766208)
 
