@@ -90,3 +90,32 @@ var drawFlower = function( stemX, stemY, centerX, centerY, flowerAngle){
 
 ```
 
+###Draw Petal Logic
+
+[Draw Petal Logic ](https://www.khanacademy.org/computer-programming/petallogic/6664207964766208)
+
+
+
+```java
+
+//draw 1 petal
+var drawPetal = function( centerX, centerY, petalAngle, scaleX, scaleY){
+pushMatrix();
+    translate(centerX, centerY);
+    scale(scaleX, scaleY);
+    rotate(petalAngle);
+    beginShape();
+    vertex(4,4);
+    bezierVertex(55,45,30,57,6,37);
+    bezierVertex(50,154,107,53,4,4);
+    endShape();
+popMatrix();
+};
+
+
+var petalAngle = 178;
+fill(123, 60, 217);
+drawPetal( 200,200, petalAngle, 1.3,1.3);
+drawPetal( 200,200, petalAngle, -1.3,1.3);
+```
+
