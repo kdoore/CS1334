@@ -3,6 +3,7 @@
 If we want to use processing functions to draw complex objects like flowers, we'll want to get more comfortable using the processing transform functions: pushMatrix(), popMatrix(), translate( ), scale( ), and rotate( ).
 
 ![](/assets/Screenshot 2017-09-25 13.29.24.png)
+
 [Final Code Link](https://www.khanacademy.org/computer-programming/plants_curvevertex/5726921278291968)
 
 Processing has functions to draw complex shapes:  
@@ -120,3 +121,4 @@ drawPetal( 200,200, petalAngle, 1.3,1.3);
 drawPetal( 200,200, petalAngle, -1.3,1.3);
 ```
 
+###Put all of the pieces together

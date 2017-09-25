@@ -5,7 +5,7 @@
 * [Algorithm](algorithm.md)
 * [Computational Design](computational-design.md)
 * [Functions to Draw Characters](functions-to-draw-characters.md)
-* [Functions to draw flowers](functions-to-draw-flowers.md)
+* [Functions to Draw Flowers](functions-to-draw-flowers.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
