@@ -29,7 +29,7 @@ If we were to draw a flowering plant on paper, would we start with plant base or
 
 This is also true with programming, but we'll want to create a flexible program so we can draw all shapes and locations of the flower on the canvas.
 
-###Draw A Flower - Start with lines for a stem.
+###Draw A Plant - Start with lines for a stem.
 
 For code to draw a stem, we can use a line, we will want to reposition flowers, so the 2 line points must be function input parameters.  
 
@@ -38,7 +38,7 @@ The function below draws 3 lines, with the middle line to hold the flower.
 
 ```java
 
-var drawFlower = function( baseX, baseY, stemX, stemY){
+var drawFlower = function( baseX, baseY, stemX, stemY, stemAngle){
     
     //start by drawing lines from the base to the stem points
     
@@ -51,11 +51,42 @@ var drawFlower = function( baseX, baseY, stemX, stemY){
     ///move the origin to the stemX, stemY point
     pushMatrix();
     translate( stemX, stemY);
-    rotate(angle); //placeholder - we might want to be able to rotate the flower before drawing it
+    rotate(stemAngle); //placeholder - we might want to be able to rotate the flower before drawing it
+    
     drawFlower( ); //placeHolder until we get this code written
+    //fill(255,0,0); //red to mark origin
+    //ellipse(0,0,10,10); //mark the origin so we can see it
     popMatrix();
     
 }
 ```
+###Draw a Flower - start with more stem lines
+We can begin by drawing more stem lines - from the stem connection point to the flower's center point, then we'll translate the origin to the flower's center point.
 
+```java
+
+var drawFlower = function( stemX, stemY, centerX, centerY, flowerAngle){
+    //start by drawing a line from stemX,stemY to centerX, centerY
+ 
+    stroke(41, 133, 57);
+    strokeWeight(10);
+    line(stemX,stemY,centerX,centerY); //draw stem section
+    
+    //move origin to flower center
+    pushMatrix();
+    translate( centerX, centerY);
+    rotate( flowerAngle);//place holder in case we want to rotate the flower
+    
+    ///drawing petals code goes here - placeholders
+    drawPetal( );
+    drawPetal( );
+    drawPetal( );
+        
+    //fill(255,0,0); //red to mark origin
+    //ellipse(0,0,10,10); //mark the origin so we can see it
+    popMatrix();
+    
+}
+
+```
 
