@@ -13,13 +13,18 @@ Here's a link to a tool that will allow designing such shapes within the khan ac
 
 [BezierVertex Tool](https://www.khanacademy.org/computer-programming/beziervertex-drawing-tool/1248677350)
 
-```
+When using the bezierVertex tool, it may be best to position your shape in the upper left corner so that the shape is defined in relation to the origin.  
+    
+    
+
+```java
 beginShape();
 vertex(4,4);
 bezierVertex(55,43,30,57,6,37);
 bezierVertex(50,154,107,53,4,4);
 endShape();
 ```
+
 
 ![](/assets/Screenshot 2017-09-25 13.21.52.png)
 
