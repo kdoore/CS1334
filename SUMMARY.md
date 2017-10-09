@@ -10,7 +10,7 @@
 * [Animation](animation.md)
 * [Animation Using Transforms](animation-using-transforms.md)
 * [RGB Colormode](rgb-colormode.md)
-* [HSB Colormode](hsb-colormode.md)
+* [HSB Colormode](hsb_colormode.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
