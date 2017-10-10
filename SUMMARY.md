@@ -18,12 +18,5 @@
   * [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
   * [Functions](functions.md)
   * [Variable Scope: Global or Local](variable_scope.md)
+* [Bounding Box - Conditional Branching using geometric constraints](bounding-box-conditional-branching-using-geometric-constraints.md)
 
-
-
-
-
-
-
-
-  
