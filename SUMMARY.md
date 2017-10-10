@@ -9,6 +9,7 @@
 * [Transforms](transforms.md)
 * [Animation](animation.md)
 * [Animation Using Transforms](animation-using-transforms.md)
+* [Bounding Box - Conditional Branching using geometric constraints](bounding-box-conditional-branching-using-geometric-constraints.md)
 * [RGB Colormode](rgb-colormode.md)
 * [HSB Colormode](hsb_colormode.md)
 * [Javascript and Processing.js](chapter1.md)
@@ -18,5 +19,5 @@
   * [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
   * [Functions](functions.md)
   * [Variable Scope: Global or Local](variable_scope.md)
-* [Bounding Box - Conditional Branching using geometric constraints](bounding-box-conditional-branching-using-geometric-constraints.md)
+* [Canvas Border Constraints](canvas-border-constraints.md)
 
