@@ -34,10 +34,14 @@ var draw = function() {
     //code to draw colored lines and text has been removed
     
 };
+
+//check if mouse is within the borders of the box 
+//when all of the conditions are true: 
+//use && to join multiple conditional expressions
+
 var mouseClicked = function(){
     if( mouseX > x && mouseX < x+w && mouseY > y && mouseY < y + h){
         buttonOn = !buttonOn;  //make buttonOn have opposite truth value, if it was false, turn to true,...if it was true, turn to false 
-        text( "buttonOn is " + buttonOn, 200,200);  //this only flashes for a second then is overwritten by the background
         println("buttonOn is " + buttonOn); //use println to get debugging information
     }
     
