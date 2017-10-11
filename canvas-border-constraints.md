@@ -26,8 +26,8 @@ We want to add conditional logic to our program, first, let's assume the ball st
 
 1. Test for collision with right border:
 
-```
-if ( ballX > 400){   //canvas right border is at x value of 400
+```java
+if ( ballX > width){   //canvas width = 400
 
 }
 ```
@@ -41,19 +41,17 @@ https://www.khanacademy.org/computer-programming/bouncing-ball/4909833776726016
 
 ```java
 
-var x  = 30;
-var y  = 25;
+var ballX = 30;
+var ballY  = 25;
 var radius = 25;
 var speedY = 0;
 var speedX = 4;  //constant in x
 var accelerationY = 0.5;  //like gravity positive downwards
 
 
-//physics of simple object movement
-//position: x,y is updated by adding speed each frame
-//x += speedX;
+//physics of simple object
+//position is updated by adding speed each frame
 //speed is updated by adding acceleration each frame
-// speedY += accelerationY;
 //change sign of speed when hitting borders
 
 var drawBall= function(x,y){
@@ -65,21 +63,22 @@ var drawBall= function(x,y){
 var draw = function() {
     background( 0);
     //check border of ball with 
-    if(  y < radius  ){
-       speedY = speedY * -1 ;  //reverse speed direction  on impact
+    if(  ballY < radius  ){
+       speedY = speedY * -1 ;  //reverse speed on impact
      }
-     if(y > height - radius){  //has ball hit the bottom
+     if(ballY > height - radius){  //has ball hit the bottom
           speedY = speedY * -1 ;  //reverse speed on impact
-          y = height-radius-1; //reset position out of impact zone
+          ballY = height-radius-1; //reset position out of impact zone
      }
-     if( x < radius || x > width-radius){ //check for impact with left or right border
+     if( ballX < radius || ballX > width-radius){ //check for impact with left or right border
        speedX = speedX * -1 ;  //reverse speed on impact
      }
      
      speedY += accelerationY;  
-     y += speedY;
-     x += speedX;
+     ballY += speedY;
+     ballX += speedX;
      
-     drawBall(x,y);
+     drawBall(ballX,ballY);
 };
+
 ```
