@@ -45,8 +45,8 @@ if ( ballX > width){   //canvas width = 400
 ballX += speed;  //update the ball's position, negative speed will move ball to the left, positive speed moves ball to the right
 ```
 
-###Check Both Left and Right Border
-At any one point in time, the ball is only in one location, but we should check each frame to see if it has just changed position so that it's now at one of the left or right edges.  If either of these situations is true, we will want to change the value of speed, this is the action that we want to take, this code will go inside the if-statement statement code block.
+###Check Both Left and Right Borders Independently 
+At any one point in time, the ball is only in one location, but we should check each frame to see if it's new position is now at one of the left or right edges.  If either of these situations is true, we will want to change the value of speed, this is the action that we want to take, this code will go inside the if-statement statement code block.
  
  ![](/assets/Screenshot 2017-10-11 10.21.08.png)
 
