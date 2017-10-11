@@ -98,7 +98,6 @@ var drawBall= function(x,y, size){
 
 //here we are updating global variables within a function, we'd prefer to pass the values in as function input parameters, but we wouldn't be able to make changes to all variables outside the 
 var updateBallPositions = function(){
-    
     speedY += accelerationY;
     ballY += speedY;
     ballX += speedX;
@@ -122,9 +121,9 @@ speedX = speedX * -1 ; //reverse speed on impact
           speedY = speedY * -1 ;  //reverse speed on impact
           ballY = height-radius-1; //reset position out of impact zone
      }
-    
-     
-      updateBallPositions( );  //no input parameters since we need to modify global values
+ 
+ //after modifying speed and acceleration    
+     updateBallPositions( );  //no input parameters since we need to modify global values
 };
 
 ```
