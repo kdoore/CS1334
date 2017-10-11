@@ -7,11 +7,10 @@ This case is different than the button constraints, in the button situation we w
  Initial conditions - we need to be careful defining our initial starting values for the ball's position, if the ball's initial position is already outside the boundary that we're testing for collision with, we may have the ball get stuck. Similarly, when intersection happens, we may need to move the ball outside the test region, just so it doesn't get stuck in a state where each frame it's speed changes direction, and it's hovering, stuck in limbo.  
  
 ###Simple Object Movement
-We can consider simple object movement in terms of position and speed, where the acceleration can also be included for a slightly more sophisticated approach.
+We can consider simple object movement in terms of position and speed. Acceleration can be included for a slightly more sophisticated approach.
 
 ###Position and Speed
-The ball object has variables: x, y that store it's position at any time.  For simple movement, we can simply increment position values during each execution of the draw( ) function.
-
+The ball object has variables: ballX, ballY which store the values of it's position at any time.  For simple movement, we can simply increment position values during each execution of the draw( ) function.
 
 ballX += 1;  //simplest case, update position with a constant value
 
@@ -47,7 +46,7 @@ ballX += speed;  //update the ball's position, negative speed will move ball to 
 ```
 
 ###Check Both Left and Right Border
-
+At any one point in time, the ball is only in one location, but we should check each frame to see if it has just changed position so that it's now at one of the left or right edges.  If either of these situations is true, we will want to change the value of speed, this is the action that we want to take, this code will go inside the if-statement statement code block.
  
   
    
@@ -74,14 +73,26 @@ var accelerationY = 0.5;  //like gravity positive downwards
 //speed is updated by adding acceleration each frame
 //change sign of speed when hitting borders
 
-var drawBall= function(x,y){
+var drawBall= function(x,y, size){
     fill(255, 0, 0);
-    ellipse( x,y,radius *2,radius *2);
+    ellipse( x,y, size ,size);
+};
+
+var updateBallPositions = function(){
+   speedY += accelerationY;  //update global values
+   ballY += speedY;  //update global values
+   ballX += speedX; //update global values
 };
 
 
 var draw = function() {
     background( 0);
+    
+    drawBall(ballX, ballY, radius * 2);
+    
+    updateBallPositions( );
+    
+    
     //check border of ball with 
     if(  ballY < radius  ){
        speedY = speedY * -1 ;  //reverse speed on impact
@@ -94,11 +105,9 @@ var draw = function() {
        speedX = speedX * -1 ;  //reverse speed on impact
      }
      
-     speedY += accelerationY;  
-     ballY += speedY;
-     ballX += speedX;
+    
      
-     drawBall(ballX,ballY);
+    
 };
 
 ```
