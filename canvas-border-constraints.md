@@ -48,12 +48,10 @@ ballX += speed;  //update the ball's position, negative speed will move ball to 
 ###Check Both Left and Right Border
 At any one point in time, the ball is only in one location, but we should check each frame to see if it has just changed position so that it's now at one of the left or right edges.  If either of these situations is true, we will want to change the value of speed, this is the action that we want to take, this code will go inside the if-statement statement code block.
  
-  
-   
-     
-  ![](/assets/Screenshot 2017-10-11 10.21.08.png)
+ ![](/assets/Screenshot 2017-10-11 10.21.08.png)
 
 ###Example Program 
+In the program below, we consider the ball's radius when determining collision with the wall.  This way the ball looks like it's actually bouncing.  Our conditional expressions test to find out when the outer radius of the ball crosses the boundaries, then we take action depending on which border we've intersected with.  These can be individual if statements because we'll take different actions in each situation.  More than one of these conditions may occur at the same time, when the ball hits a corner, so we need to check that our code handles these situations correctly.
  
 https://www.khanacademy.org/computer-programming/bouncing-ball/4909833776726016
 
@@ -75,25 +73,23 @@ var accelerationY = 0.5;  //like gravity positive downwards
 
 var drawBall= function(x,y, size){
     fill(255, 0, 0);
-    ellipse( x,y, size ,size);
+    ellipse( x,y,size,size);
 };
 
+//here we are updating global variables within a function, we'd prefer to pass the values in as function input parameters, but we wouldn't be able to make changes to all variables outside the 
 var updateBallPositions = function(){
-   speedY += accelerationY;  //update global values
-   ballY += speedY;  //update global values
-   ballX += speedX; //update global values
+    
+    speedY += accelerationY;
+    ballY += speedY;
+    ballX += speedX;
 };
-
 
 var draw = function() {
     background( 0);
     
-    drawBall(ballX, ballY, radius * 2);
-    
-    updateBallPositions( );
-    
-    
-    //check border of ball with 
+    drawBall(ballX,ballY, radius * 2);//pass in x, y, size
+  
+     //check border of ball with 
     if(  ballY < radius  ){
        speedY = speedY * -1 ;  //reverse speed on impact
      }
@@ -105,9 +101,7 @@ var draw = function() {
        speedX = speedX * -1 ;  //reverse speed on impact
      }
      
-    
-     
-    
+      updateBallPositions( );  //no input parameters since we need to modify global values
 };
 
 ```
