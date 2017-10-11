@@ -10,6 +10,7 @@ Then, within the mouseClicked( ) function we'll check to see if the mouse positi
 Khan Example Program for button bounding box
 https://www.khanacademy.org/computer-programming/button-bounding-box/5119147397283840
 
+###Simplified Code for Button with Bounding Box
 ![](/assets/Screenshot 2017-10-10 12.38.15.png)
 
 ```java
