@@ -112,6 +112,7 @@ var draw = function() {
      //check border of ball with 
     if(  ballY < radius  ){
        speedY = speedY * -1 ;  //reverse speed on impact
+       ballY = radius + 1; //reset position outside zone
      }
      if(ballY > height - radius){  //has ball hit the bottom
           speedY = speedY * -1 ;  //reverse speed on impact
