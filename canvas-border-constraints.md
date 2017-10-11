@@ -109,7 +109,11 @@ var draw = function() {
     
     drawBall(ballX,ballY, radius * 2);//pass in x, y, size
   
-     //check border of ball with 
+  //check position of ball - for intersection with boundaries 
+               
+      if( ballX < radius || ballX > width-radius){ //check for impact with left or right border
+speedX = speedX * -1 ; //reverse speed on impact
+}
     if(  ballY < radius  ){
        speedY = speedY * -1 ;  //reverse speed on impact
        ballY = radius + 1; //reset position outside zone
@@ -118,9 +122,7 @@ var draw = function() {
           speedY = speedY * -1 ;  //reverse speed on impact
           ballY = height-radius-1; //reset position out of impact zone
      }
-     if( ballX < radius || ballX > width-radius){ //check for impact with left or right border
-       speedX = speedX * -1 ;  //reverse speed on impact
-     }
+    
      
       updateBallPositions( );  //no input parameters since we need to modify global values
 };
