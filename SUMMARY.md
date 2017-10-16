@@ -17,7 +17,10 @@
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
   * [Indentifiers](indentifiers.md)
-  * [Variable Modification Shortcuts](numerical_operator_shortcuts.md)
   * [Functions](functions.md)
   * [Variable Scope: Global or Local](variable_scope.md)
+  * [Logical Operators ](logical_operators.md)
+  * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
+* [Processing Functions](processing-functions.md)
+  *[Shape Primitive Functions](shape-primitive-functions.md)
 
