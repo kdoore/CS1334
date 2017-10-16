@@ -21,6 +21,5 @@
   * [Variable Scope: Global or Local](variable_scope.md)
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
-
-
+* [Finite State Machine](finite-state-machine.md)
 
