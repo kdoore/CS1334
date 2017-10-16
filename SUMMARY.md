@@ -6,7 +6,6 @@
 * [Computational Design](computational-design.md)
 * [RGB Colormode](rgb-colormode.md)
 * [HSB Colormode](hsb_colormode.md)
-* [Shape Primitive Functions](shape-primitive-functions.md)
 * [Transforms](transforms.md)
 * [Animation](animation.md)
 * [Functions to Draw Characters](functions-to-draw-characters.md)
