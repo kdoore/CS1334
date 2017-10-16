@@ -6,6 +6,7 @@
 * [Computational Design](computational-design.md)
 * [RGB Colormode](rgb-colormode.md)
 * [HSB Colormode](hsb_colormode.md)
+* [Shape Primitive Functions](shape-primitive-functions.md)
 * [Transforms](transforms.md)
 * [Animation](animation.md)
 * [Functions to Draw Characters](functions-to-draw-characters.md)
@@ -21,6 +22,6 @@
   * [Variable Scope: Global or Local](variable_scope.md)
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
-* [Processing Functions](processing-functions.md)
-  *[Shape Primitive Functions](shape-primitive-functions.md)
+
+
 
