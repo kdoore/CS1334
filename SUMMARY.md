@@ -13,6 +13,7 @@
 * [Bounding Box Conditional Branching](bounding-box-conditional-branching.md)
 * [Canvas Border Constraints](canvas-border-constraints.md)
 * [Animation Using Transforms](animation-using-transforms.md)
+* [Finite State Machine](finite-state-machine.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
@@ -21,5 +22,4 @@
   * [Variable Scope: Global or Local](variable_scope.md)
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
-* [Finite State Machine](finite-state-machine.md)
 
