@@ -24,4 +24,3 @@ Below, the FSM State Transition Table shows a full listing of allowable transiti
 ###FSM State-Transition Diagram
 The image below is a stylized version of an FSM State-transition diagram, normally each state is represented by a circle, as with the Start state.
 
-![](/assets/Screenshot 2017-10-18 12.54.02.png)
