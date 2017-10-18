@@ -16,14 +16,13 @@ When the animation is in the `UP` state, the character's arm is moving up, this 
 
 
 
-
 ```java
 //Inside checkArmState function
 if(waveState === "UP" && (angle <= maxAngle)){
      if(angle >= maxAngle){   //test for the event
           waveState ="DOWN";   //handle the event - change state
      } //end if
-     angle += speed;  
+     angle += speed;  //if in UP state, increase angle each frame
 }  //end if
 
 
