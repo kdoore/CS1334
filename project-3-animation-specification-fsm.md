@@ -29,13 +29,10 @@ if(waveState === "UP" && (angle <= maxAngle)){
 ```
 
 
-
-
 ![](/assets/Screenshot 2017-10-18 12.40.02.png)
 
 ###FSM State Transition Table
 Below, the FSM State Transition Table shows a full listing of allowable transitions between system states that can happen when the corresponding event occurs.  We can see that if the system is in the state where `waveState` equals `UP`, then, if the event occurs: `armAngle >= maxAngle` , then the system will transition such that the state will now be: `waveState` equals `DOWN`.
-
 
 
 ![](/assets/Screenshot 2017-10-18 12.40.13.png)
@@ -44,3 +41,7 @@ Below, the FSM State Transition Table shows a full listing of allowable transiti
 The image below is a stylized version of an FSM State-transition diagram, normally each state is represented by a circle, as with the Start state. We can see from the diagram that the system begins in the start state, then, when the reset button is pressed, the system transtions into the `waveState: UP` state.  
 
 ![](/assets/Screenshot 2017-10-18 13.05.01.png)
+
+The diagram and tables give us a framework to create simple logic to control our animation.  FSM's provide a powerful way to think about a complex system, once we have a clear specification of the system's states and events, then it is much easier to write code to implement the logic.
+
+If we want to modify our system to add new animations, the first step would be to add new states and events to our tables and diagrams.  We can create an FSM for each animated object in our scene. 
