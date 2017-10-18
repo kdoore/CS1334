@@ -4,7 +4,13 @@
 
 https://www.khanacademy.org/computer-programming/spin-off-of-animationdemo/6167117722943488
 
-![](/assets/Screenshot 2017-10-18 12.39.54.png)
+
 
 Step 1:  Identify States and Events in your Animation
+
+The tables below show the possible values for the **state:** `waveState` in the linked Khan Academy Project
+
+![](/assets/Screenshot 2017-10-18 12.39.54.png)
+
+![](/assets/Screenshot 2017-10-18 12.40.02.png)
 
