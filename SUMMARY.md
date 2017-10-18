@@ -14,6 +14,7 @@
 * [Canvas Border Constraints](canvas-border-constraints.md)
 * [Animation Using Transforms](animation-using-transforms.md)
 * [Finite State Machine](finite-state-machine.md)
+* [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
