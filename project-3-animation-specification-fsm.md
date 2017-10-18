@@ -15,8 +15,9 @@ In this animation project, the states are represented by a variable: `waveState`
 When the animation is in the `UP` state, the character's arm is moving up, this happens because the variable: `armAngle` is being modified, it's having a positive speed value added to it each frame.  When armAngle reaches the maximum allowable value for this animation, we consider that an event:  the event is that the geometry of the armAngle has reached it's maximum value.  We'll write logic so that each frame we check the value of the arm angle and when the armAngle >= maxAngle, we have to write logic to implement the state change according to the diagram and the table:  waveState transitions from `UP` to `DOWN`.  
 
 
-```java
 
+
+```java
 //Inside checkArmState function
 if(waveState === "UP" && (angle <= maxAngle)){
           if(angle >= maxAngle){   //test for the event
@@ -27,6 +28,9 @@ if(waveState === "UP" && (angle <= maxAngle)){
 
 
 ```
+
+
+
 
 ![](/assets/Screenshot 2017-10-18 12.40.02.png)
 
