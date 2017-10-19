@@ -13,6 +13,7 @@
 * [Bounding Box Conditional Branching](bounding-box-conditional-branching.md)
 * [Canvas Border Constraints](canvas-border-constraints.md)
 * [Animation Using Transforms](animation-using-transforms.md)
+* [Loops Using Math Formulas for Position](loops-using-math-formulas-for-position.md)
 * [Finite State Machine](finite-state-machine.md)
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
 * [Javascript and Processing.js](chapter1.md)
