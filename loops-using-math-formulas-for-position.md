@@ -2,7 +2,7 @@
 
 Often we need to repeat execution for some some block of code.  There are 2 basic control structures that can be used for repeating blocks of code, these are both considered as _**loop**_ control structures because we can think of repetition as a looping procedure.  
 
-###For-loops  - Count Controlled Loops
+###For-loops  - Count Controlled Loop
 When we have code we want repeated, often we know exactly how many times we need the repeated code to be executed.  A for-loop has a loop-control structure that provides the code-structure needed to control how many times the loop code is executed.
 
 `for( var i = 0; i< 100; i++ ) // loop control structure`
