@@ -18,7 +18,6 @@ Since we're repeatedly drawing the same shape, a rectangle that has it's height 
 **Example: **Draw Rainbow Bars of differnt width across the canvas
 
 
-
 ```java
 colorMode(HSB);  //HSB colormode 
 background( 0);
@@ -43,3 +42,4 @@ while (x <= width){
 ```
 
 ![](/assets/Screenshot 2017-10-23 12.41.29.png)
+
