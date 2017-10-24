@@ -25,4 +25,5 @@
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
 * [Repetition - Loops](repetition-loops.md)
+* [Arrays](arrays.md)
 
