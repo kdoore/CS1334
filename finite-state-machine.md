@@ -4,10 +4,10 @@ Finite State Machine (FSM) is a mathematical abstraction to simplify reasoning a
 
 To represent a system using a finite state machine, it is necessary to identify:
 
-        1.  all possible states for the system
-        2.  all possible events that can change the state of the system
+        1.  All possible states for the system
+        2.  All possible events that can change the state of the system
         3.  For every state, we need to specify what events can occur that cause the system to change to a different state. 
-        4.  With a Finite State Machine, we need a defined variable that can keep track of the current state that the system is in. 
+        4.  We need a defined variable that can keep track of the current state that the system is in. 
     
 
 In an FSM system, the system is limited to being in a single state at any time.  This is an important concept, because it allows for simplified logic to be used to describe the dynamic system.  
@@ -23,4 +23,12 @@ Once the set of states and events have been defined for a system, then a diagram
 
 See Project 3 - [Animation Specification for Example of FSM](/project-3-animation-specification-fsm.md)
 
+###State Transition Table / Diagram
 
+![](/assets/Screenshot 2017-10-18 12.39.54.png)
+
+![](/assets/Screenshot 2017-10-18 12.40.02.png)
+
+![](/assets/Screenshot 2017-10-18 12.40.13.png)
+
+![](/assets/Screenshot 2017-10-18 13.05.01.png)
