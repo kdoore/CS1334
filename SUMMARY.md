@@ -15,6 +15,7 @@
 * [Animation Using Transforms](animation-using-transforms.md)
 * [Loops Using Math Formulas for Position](loops-using-math-formulas-for-position.md)
 * [Finite State Machine](finite-state-machine.md)
+* [Arrays](arrays.md)
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
@@ -25,5 +26,4 @@
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
 * [Repetition - Loops](repetition-loops.md)
-* [Arrays](arrays.md)
 
