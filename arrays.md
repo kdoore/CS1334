@@ -30,6 +30,11 @@ Once we have declared and initialized our array, we can add elements to the arra
 ###Dot Notation
 Dot notation allows an instance of an object to access it's property values and to call functions or methods associated with the object.  For Arrays, we'll often use the `length` property.  Every instance of an Array object stores it's length in the variable: `length`.  In addition, Array objects can use the `push( )` method to add new items to the array.  Adding an item using the push( ) method results in a new array element being created and the length of the array is increased by one.  The benefit of using the push( ) method is that you don't need to worry about array indexes when adding items to the array, and the length property can be used to determine the newly updated number of elements in the array.
 
+###for-loops with Arrays
+for-loops provide a convenient way to work with arrays, the loop control variable can be used as an index to access each array element.  for-loops are useful when initializing elements of array.  for-loops are also useful when accessing array elements to use or modify the values.  The example code below shows both situations:
+
+  
+
 ###Arrays for Animation
 
 [Khan Academy Array Example](https://www.khanacademy.org/computer-programming/arrays-bouncing-balls/6637063593721856)
