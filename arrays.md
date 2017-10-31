@@ -33,7 +33,48 @@ Dot notation allows an instance of an object to access it's property values and 
 ###for-loops with Arrays
 for-loops provide a convenient way to work with arrays, the loop control variable can be used as an index to access each array element.  for-loops are useful when initializing elements of array.  for-loops are also useful when accessing array elements to use or modify the values.  The example code below shows both situations:
 
+
+
+```
+var colors = [ ];  //declare and initiallize an array to hold colors
+var xPositions = [ ];
+var yPositions = [ ];
+var ySpeed = [];
+var numBalls = 55;  //how many to make
+
+//initialize each color using bracket notation
+colors[ 0 ] = color(255, 0, 89); //red
+colors[ 1 ] = color(0, 255, 43); //green
+
+
+  //use for-loop to initialize array elements
+var initializePositions = function( ){
+    for( var i = 0; i < numBalls; i++){
+      xPositions[ i ] = i * 25;
+      yPositions.push(0);  //set all yPositions to 0
+      ySpeed[ i ] = random( 1, 5);
+    }
+};
   
+  //function to draw each Ball using array elements for xPosition, yPosition, ySpeed, and 
+ var  drawBalls = function(){
+////loop to display the balls
+for( var i=0; i < xPositions.length; i++){
+    var x = xPositions[ i ];
+    var curColor = colors[ i % 2 ];  //use modulus to restrict within range of valid colors (0,1)
+    var y = yPositions[i];
+    drawBall( x, y, curColor);
+    //test to see if ball hits floor or ceiling
+    if( y > 400  || y < 0 ){
+        ySpeed[i] *= -1 ; //reverse speed
+    }
+    yPositions[ i ] += ySpeed [ i ];  //update yPosition values 
+ }
+};
+  
+```
+
+
 
 ###Arrays for Animation
 
