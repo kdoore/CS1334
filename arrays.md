@@ -20,9 +20,12 @@ The examples below show two different ways to initialize an array variable, the 
     println("array size: " +  len );  //array size: 3 
     
 ###Initialize Array Elements
+Once we have declared and initialized our array, we can add elements to the array using bracket notation and the index of the element, or we can use the push( ) method to add elements to the end of the array.
 
+    arrayExample1[0] = 3;  //add an element to the array, initialize with value 3.
+    arrayExample1[0] = 5; //modify the value of the first element in the array.
 
-
+    arrayExample1.push( 6 ); //add a new item to the end of the array
 
 ###Dot Notation
 Dot notation allows an instance of an object to access it's property values and to call functions or methods associated with the object.  For Arrays, we'll often use the `length` property.  Every instance of an Array object stores it's length in the variable: `length`.  
