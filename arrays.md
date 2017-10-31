@@ -28,7 +28,7 @@ Once we have declared and initialized our array, we can add elements to the arra
     arrayExample1.push( 6 ); //add a new item to the end of the array
 
 ###Dot Notation
-Dot notation allows an instance of an object to access it's property values and to call functions or methods associated with the object.  For Arrays, we'll often use the `length` property.  Every instance of an Array object stores it's length in the variable: `length`.  
+Dot notation allows an instance of an object to access it's property values and to call functions or methods associated with the object.  For Arrays, we'll often use the `length` property.  Every instance of an Array object stores it's length in the variable: `length`.  In addition, Array objects can use the `push( )` method to add new items to the array.  Adding an item using the push( ) method results in a new array element being created and the length of the array is increased by one.  The benefit of using the push( ) method is that you don't need to worry about array indexes when adding items to the array, and the length property can be used to determine the newly updated number of elements in the array.
 
 ###Arrays for Animation
 
