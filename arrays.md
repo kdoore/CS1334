@@ -10,13 +10,15 @@ Arrays in javascript are `objects`, where objects have behaviors and properties 
 Brackets are used to create Arrays and to access elements of an Array object instance.  
 
 ###Declare and Initialize Array Objects
-The examples below show two different ways to 
+The examples below show two different ways to initialize an array variable, the first example declares and initializes an empty array, the second example provides 3 values to initialize the array with 3 elements.
 
     var arrayExample1 = [ ];  //code to declare and initialize array-type variable. 
 
     //Initialize with data for 3 elements
     var arrayExample2 = [ 1, 4, 5 ];
-
+    var len = arrayExample2.length; // length property
+    println("array size: " +  len );  //array size: 3 
+    
 ###Initialize Array Elements
 
 
