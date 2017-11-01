@@ -4,6 +4,9 @@
 
 https://www.khanacademy.org/computer-programming/spin-off-of-animationdemo/6167117722943488
 
+Simplified Animation Example
+
+https://www.khanacademy.org/computer-programming/animation-demo-simple/5581835098324992
 
 
 Step 1:  Identify States and Events in your Animation
