@@ -18,6 +18,7 @@
 * [Repetition - Loops](repetition-loops.md)
 * [Arrays](arrays.md)
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
+* [Project 4 - Animation based on Finite State Machine](project-4-animation-based-on-finite-state-machine.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
@@ -26,5 +27,4 @@
   * [Variable Scope: Global or Local](variable_scope.md)
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
-* [Project 4 - Animation based on Finite State Machine](project-4-animation-based-on-finite-state-machine.md)
 
