@@ -26,4 +26,5 @@
   * [Variable Scope: Global or Local](variable_scope.md)
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
+* [Project 4 - Animation based on Finite State Machine](project-4-animation-based-on-finite-state-machine.md)
 
