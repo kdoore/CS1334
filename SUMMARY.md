@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Introduction](chapter1.md)
 * [Algorithm](algorithm.md)
 * [RGB Colormode](rgb-colormode.md)
@@ -14,9 +15,10 @@
 * [Loops Using Math Formulas for Position](loops-using-math-formulas-for-position.md)
 * [Finite State Machine](finite-state-machine.md)
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
+* [Arrays](arrays.md)
 
+## Javascript Syntax
 
----
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
   * [Indentifiers](indentifiers.md)
@@ -25,3 +27,4 @@
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
   * [Repetition - Loops](repetition-loops.md)
+
