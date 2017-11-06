@@ -29,7 +29,11 @@ Square Brackets are used to initialize and modify arrays and array elements.
     b.  Get a value
         var msg  = myElements[0];  // get the first element
 
+###Dot Notation
+Since Arrays are objects, 
 
 ###Length Property
-    Array's have a `length` property, which stores the number of elements in the array.  This is determined by the position of the last item in the array.  An array can have a large length, yet not have valid data in each array element.  
+Array's have a `length` property, which stores the number of elements in the array.  This is determined by the position of the last item in the array.  An array can have a large length, yet not have valid data in each array element.  
 
+###push( ) Method
+Arrays can use the push( ) method to safely add new elements to the end of the array.
