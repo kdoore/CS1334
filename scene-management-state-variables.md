@@ -15,4 +15,6 @@ We can use an FSM structure if we have a finite set of possible states for the s
    
   ###Events:  
   We need to define events that can change the state of the system.  We can use the keypress event, we can say that the RIGHT arrow key is an event that will change to the next scene.  We can also say that the LEFT arrow key can change the scene back to the previous scene.  
+  
+  
 
