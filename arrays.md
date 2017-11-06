@@ -70,6 +70,8 @@ In the code example below, 3 arrays are declared and initialized with no element
 
 
 ```java
+//
+var colors = [ ];  
 var xPositions = [ ];
 var yPositions = [ ];
 var ySpeed = [];
@@ -82,6 +84,12 @@ var initializePositions = function( ){
       ySpeed[ i ] = random( 1, 5);
     }
 };
-```
 
+//initialize 2 elements in the colors array
+colors[ 0 ] = color(255, 0, 89); //red
+colors[ 1 ] = color(0, 255, 43); //green
+
+
+```
+###Array Example  
 
