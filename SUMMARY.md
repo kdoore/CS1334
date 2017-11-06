@@ -23,4 +23,5 @@
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_shortcuts.md)
   * [Repetition - Loops](repetition-loops.md)
+* [Project 4 - Animation Logic](project-4-animation-logic.md)
 
