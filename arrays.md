@@ -101,7 +101,8 @@ In the code below, a for-loop is used to step through each array element and use
     ellipse( x, y, 10,10);
 };   
 
-// Function to    
+// Function to animate bouncing balls, yPosition for each ball is updated using ySpeed for each ball.  If the yPosition is at top or bottom of screen, ySpeed is reversed.  Color of balls is determined using modulus, since there are only 2 color elements, modulus insures that each time i is changed, only the values 0, 1 are used to set the ball's color. 
+   
 var  drawBalls = function(){
 ////loop to display the balls
 for( var i=0; i < xPositions.length; i++){
