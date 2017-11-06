@@ -66,7 +66,7 @@ size = myElements.length; //what's the new length?  (5)
 Since arrays use a numeric index to access each array element, for-loops provide an easy way to access each item in an array.  Loops are often useful when initializing array values.  Loops are used to access each array element to access or modify the value according to your program's logic.
 
 ###Initialization Example
-
+In the code example below, 3 arrays are declared and initialized with no elements.  The for-loop initializes 55 elements in the array, where the elements have indexes from 0-54. All of the xPosition elements are set using the loop counter variable i in an expression to offset each value by 25.  All yPosition elements are initialized with a value of 0.  All ySpeed elements are initialized with a random value in the range 1 - 5.
 
 
 
