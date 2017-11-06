@@ -2,7 +2,7 @@
 
 Arrays are a _data structure_ - a programming construct to store data or information.Arrays provide methods to store and retrieve values from an ordered list, items are arranged in the list based on the order they are added to the list.
 
-We access an element of the list using the ‘index’  or position value of the item, where array indexes start at 0 and end with the index value: length-1.Arrays in javascript are `objects`, where objects have behaviors and properties that can be accessed by the actual object instance.
+We access an element of the list using the ‘index’  or position value of the item, where array indexes start at 0 and end with the index value: length-1.Arrays in javascript are `objects`, where objects have behaviors and properties that can be accessed by the actual object instance.
 
 ###Bracket Notation
 
@@ -15,7 +15,7 @@ The examples below show two different ways to initialize an array variable, the 
 
 ```java
 
-var arrayExample1 = [ ]; //code to declare and initialize array-type variable.
+var arrayExample1 = [ ]; //code to declare and initialize array-type variable.
 
 //Initialize with data for 3 elements
 var arrayExample2 = [ 1, 4, 5 ];
@@ -34,4 +34,23 @@ arrayExample1.push( 6 ); //add a new item to the end of the array
 
 ```
 
+###Dot Notation
 
+Dot notation allows an instance of an object to access it's property values and to call functions or methods associated with the object. For Arrays, we'll often use the `length` property. Every instance of an Array object stores it's length in the variable: `length`. In addition, Array objects can use the `push( )` method to add new items to the array. 
+
+Adding an item using the push( ) method results in a new array element being created and the length of the array is increased by one. The benefit of using the push( ) method is that you don't need to worry about array indexes when adding items to the array, and the length property can be used to determine the newly updated number of elements in the array.
+
+
+###for-loops with Arrays 
+for-loops provide a convenient way to work with arrays, the loop control variable can be used as an index to access each array element. for-loops are useful when initializing elements of array. for-loops are also useful when accessing array elements to use or modify the values. The example code below shows both situations:
+
+
+
+
+```java
+var colors = [ ]; //declare and initiallize an array to hold colors
+```
+
+
+###Arrays for Animation
+[Khan Academy Array Example](https://www.khanacademy.org/computer-programming/arrays-bouncing-balls/6637063593721856)
