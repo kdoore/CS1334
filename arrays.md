@@ -1,6 +1,6 @@
 #Arrays
 
-Arrays are a ‘data structure’ - a programming construct to store data or information.
+Arrays are a _data structure_ - a programming construct to store data or information.
 Arrays provide methods to store and retrieve values from an ordered list, items are arranged in the list based on the order they are added to the list.
 We access an element of the list using the ‘index’  or position value of the item, where array indexes start at 0 and end with the index value: length-1.
 
