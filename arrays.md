@@ -9,7 +9,7 @@ https://www.khanacademy.org/computer-programming/arrays-bouncing-balls/663706359
 ###Arrays are Objects
 Arrays are objects in javascript, this means that arrays have properties and functions that the array object can use.  
 
-###Initialization of Arrays , Bracket Notation
+###Declare and Initialize Arrays
 There are several methods to initialize arrays, one method creates an empty array, where empty square brackets indicate an Array type variable is created.  The second method to declare and initailize an array is to put values within the square brackets when declaring the variable.  
 Bracket notation is used when working with arrays.  
 
@@ -17,10 +17,18 @@ Bracket notation is used when working with arrays.
     
     var myElements2 = [ 1, 2, 5 ]; // an array with 3 elements
 
+###Bracket Notation
+Square Brackets are used to initialize and modify arrays and array elements.  
 
+1.  When declaring an array, a list of comma-separated values within the brackets are used to set values for individual array elements. 
+2.  After the array has been initialized, only integer values can be used within the array brackets, the integer is called the array index and it indicates the order or position of each array element within the array's list-like structure. In the examples below, the first element in the Array can be accessed using the index value: 0.  Array elements have index values start at 0 and must be integer, whole numbers.
 
+    a.  Set a value
+        myElements[0] = "hello";
+        
+    b.  Get a value
+        var msg  = myElements[0];  // get the first element
 
-Declare an array
 
 ###Length Property
     Array's have a `length` property, which stores the number of elements in the array.  This is determined by the position of the last item in the array.  An array can have a large length, yet not have valid data in each array element.  
