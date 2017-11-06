@@ -34,10 +34,12 @@ Since Arrays are objects, each time we create an array we can use all of the cod
 
 [Array Documentation -  MDN Javascript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
+```java
 var myElements = [ 1,5,7,9 ];
 var size = myElements.length; //access length property
 myElements.push( 11 ); //new element added as 5th item
 myElements[4] = 0; //modify the last element added
+```
 
 ###Length Property
 Array's have a `length` property, which stores the number of elements in the array.  This is determined by the position of the last item in the array.  An array can have a large length, yet not have valid data in each array element.  
