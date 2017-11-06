@@ -16,6 +16,7 @@
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
 * [Project 4 - Animation Logic](project-4-animation-logic.md)
 * [Arrays](arrays.md)
+* [Scene Management - State Variables](scene-management-state-variables.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
   * [Indentifiers](indentifiers.md)
