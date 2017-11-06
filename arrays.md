@@ -53,3 +53,10 @@ size = myElements.length; //what's the new length?  (100)
 ```
 ###push( ) Method
 Arrays can use the push( ) method to safely add new elements to the end of the array.
+
+```java
+var myElements = [ 1,5,7,9 ];
+var size = myElements.length; //access length property
+myElements.push( 0); // adds element at end
+size = myElements.length; //what's the new length?  (5)
+```
