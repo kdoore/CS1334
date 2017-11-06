@@ -17,7 +17,6 @@
 * [Finite State Machine](finite-state-machine.md)
 * [Repetition - Loops](repetition-loops.md)
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
-* [Project 4 - Animation based on Finite State Machine](project-4-animation-based-on-finite-state-machine.md)
 * [Javascript and Processing.js](chapter1.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
