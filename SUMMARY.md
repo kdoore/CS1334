@@ -14,3 +14,14 @@
 * [Loops Using Math Formulas for Position](loops-using-math-formulas-for-position.md)
 * [Finite State Machine](finite-state-machine.md)
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
+
+
+---
+* [Javascript Syntax](javascript_syntax.md)
+  * [Variables](variables.md)
+  * [Indentifiers](indentifiers.md)
+  * [Functions](functions.md)
+  * [Variable Scope: Global or Local](variable_scope.md)
+  * [Logical Operators ](logical_operators.md)
+  * [Numerical Operator Shortcuts](numerical_operator_shortcuts.md)
+  * [Repetition - Loops](repetition-loops.md)
