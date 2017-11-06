@@ -91,5 +91,38 @@ colors[ 1 ] = color(0, 255, 43); //green
 
 
 ```
-###Array Example  
+###Array Example - For-loop to use array values  
+In the code below, a for-loop is used to step through each array element and use the values to create bouncing ball animation because the position values are modified each time the for-loop code is executed in the draw loop.  
+
+```java
+//function to draw a single ball using input position values: x, y, and color bColor
+ var drawBall = function(  x, y, bColor){
+    fill(bColor);
+    ellipse( x, y, 10,10);
+};   
+
+// Function to    
+var  drawBalls = function(){
+////loop to display the balls
+for( var i=0; i < xPositions.length; i++){
+    var x = xPositions[ i ];
+    var curColor = colors[ i % 2 ];
+    var y = yPositions[i];
+    drawBall( x, y, curColor);
+    //test to see if ball hits floor or ceiling
+    if( y > 400  || y < 0 ){
+        ySpeed[i] *= -1 ; //reverse speed
+    }
+    yPositions[ i ] += ySpeed [ i ];  //update yPosition values 
+ }
+};
+
+
+var draw = function() {
+    background(0);
+     drawBalls();
+};
+
+
+```
 
