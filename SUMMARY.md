@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Introduction](chapter1.md)
 * [Algorithm](algorithm.md)
 * [RGB Colormode](rgb-colormode.md)
 * [HSB Colormode](hsb_colormode.md)
