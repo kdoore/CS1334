@@ -79,3 +79,4 @@ for( var i=0; i < xPositions.length; i++){
 ###Arrays for Animation
 
 [Khan Academy Array Example](https://www.khanacademy.org/computer-programming/arrays-bouncing-balls/6637063593721856)
+
