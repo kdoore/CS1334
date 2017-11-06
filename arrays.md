@@ -60,3 +60,7 @@ var size = myElements.length; //access length property
 myElements.push( 0); // adds element at end
 size = myElements.length; //what's the new length?  (5)
 ```
+
+###For-Loops to work with Arrays
+
+Since arrays use a numeric index to access each array element, for-loops provide an easy way to access each item in an array.  Loops are often useful when initializing array values if the loop-control index can be used to 
