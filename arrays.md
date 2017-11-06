@@ -69,7 +69,6 @@ Since arrays use a numeric index to access each array element, for-loops provide
 In the code example below, 3 arrays are declared and initialized with no elements.  The for-loop initializes 55 elements in the array, where the elements have indexes from 0-54. All of the xPosition elements are set using the loop counter variable i in an expression to offset each value by 25.  All yPosition elements are initialized with a value of 0.  All ySpeed elements are initialized with a random value in the range 1 - 5.
 
 
-
 ```java
 var xPositions = [ ];
 var yPositions = [ ];
@@ -84,4 +83,5 @@ var initializePositions = function( ){
     }
 };
 ```
+
 
