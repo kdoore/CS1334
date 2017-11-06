@@ -44,5 +44,12 @@ myElements[4] = 0; //modify the last element added
 ###Length Property
 Array's have a `length` property, which stores the number of elements in the array.  This is determined by the position of the last item in the array.  An array can have a large length, yet not have valid data in each array element.  
 
+
+```java
+var myElements = [ 1,5,7,9 ];
+var size = myElements.length; //access length property
+myElements[99]  = 0;
+size = myElements.length; //what's the new length?  (100)
+```
 ###push( ) Method
 Arrays can use the push( ) method to safely add new elements to the end of the array.
