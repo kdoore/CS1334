@@ -22,5 +22,5 @@
 * [Variable Scope: Global or Local](variable_scope.md)
 * [Logical Operators ](logical_operators.md)
 * [Numerical Operator Shortcuts](numerical_shortcuts.md)
-  * [Repetition - Loops](repetition-loops.md)
+* [Repetition - Loops](repetition-loops.md)
 
