@@ -1,8 +1,10 @@
 ###Project 3
 
-**Project 3   - Animation Example**
+**Project 3   - Animation Examples**
 
-https://www.khanacademy.org/computer-programming/spin-off-of-animationdemo/6167117722943488
+[Simplified Example - Khan Academy link](https://www.khanacademy.org/computer-programming/animation-demo-simple/5581835098324992)
+
+[Example with animated text- Khan Academy link](https://kdoore.gitbooks.io/cs1334/content/project-3-animation-specification-fsm.html)
 
 
 **Identify States and Events in your Animation**
