@@ -5,8 +5,7 @@
 https://www.khanacademy.org/computer-programming/spin-off-of-animationdemo/6167117722943488
 
 
-
-###Identify States and Events in your Animation
+**Identify States and Events in your Animation**
 
 The tables below show the possible values for the **state:** `waveState` in the linked Khan Academy Project
 
@@ -14,7 +13,6 @@ The tables below show the possible values for the **state:** `waveState` in the 
 
 In this animation project, the states are represented by a variable: `waveState`, and at any point in time, the system is in one of three possible states: `UP`, `DOWN`, `STOP`.
 When the animation is in the `UP` state, the character's arm is moving up, this happens because the variable: `armAngle` is being modified, it's having a positive speed value added to it each frame.  When armAngle reaches the maximum allowable value for this animation, we consider that an event:  the event is that the geometry of the armAngle has reached it's maximum value.  We'll write logic so that each frame we check the value of the arm angle and when the armAngle >= maxAngle, we have to write logic to implement the state change according to the diagram and the table:  waveState transitions from `UP` to `DOWN`.  
-
 
 
 ```java
@@ -29,7 +27,6 @@ if(waveState === "UP" ){
 
 
 ```
-
 
 ![](/assets/Screenshot 2017-10-18 12.40.02.png)
 
