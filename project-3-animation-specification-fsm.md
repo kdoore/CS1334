@@ -6,7 +6,7 @@ https://www.khanacademy.org/computer-programming/spin-off-of-animationdemo/61671
 
 
 
-Step 1:  Identify States and Events in your Animation
+###Identify States and Events in your Animation
 
 The tables below show the possible values for the **state:** `waveState` in the linked Khan Academy Project
 
@@ -19,11 +19,12 @@ When the animation is in the `UP` state, the character's arm is moving up, this 
 
 ```java
 //Inside checkArmState function
-if(waveState === "UP" && (angle <= maxAngle)){
+if(waveState === "UP" ){
+     angle += speed; //if in UP state, increase angle each frame
      if(angle >= maxAngle){   //test for the event
           waveState ="DOWN";   //handle the event - change state
      } //end if
-     angle += speed;  //if in UP state, increase angle each frame
+    
 }  //end if
 
 
