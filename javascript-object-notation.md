@@ -47,7 +47,7 @@ var mouseClicked = function(){
 ```
 
 ###Javascript Object Literals
-Javascript has a convenient way to store a group of data that is all related to 1 object, object literal notation. For using Javascript object literals, you will a global variable with a code block that contains property name: attribute value pairs, these are separated by commas.
+Javascript has a convenient way to store a group of data that is all related to 1 object, object literal notation. For using Javascript object literals, you will a global variable with a code block that contains property name: attribute value pairs, these are separated by commas. Object literals allow us to treat the data associated with an object as one bundle of information. 
 
 In the code below we can see that we've created an object literal with the name: btn1
 
@@ -71,10 +71,11 @@ var drawButton= function( btn ){
 drawButton( btn1 );    //call the function
 ```
 
+Example Project using Javascript Object Literals for Data
 
+https://www.khanacademy.org/computer-programming/simple-button2/6732500190035968
 
-
-This is one step short of writing functions to create objects, here we are treating the data part of an object as one bundle of information.  
+ 
 
 JSON is a similar object syntax used as an open data standard for the web.  [](https://en.wikipedia.org/wiki/JSON)
 
