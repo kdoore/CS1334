@@ -18,6 +18,7 @@
 * [Arrays](arrays.md)
 * [Time](time.md)
 * [Scene Management - State Variables](scene-management-state-variables.md)
+* [Buttons](javascript-object-notation.md)
 * [Javascript Syntax](javascript_syntax.md)
   * [Variables](variables.md)
   * [Indentifiers](indentifiers.md)
