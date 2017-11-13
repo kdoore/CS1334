@@ -11,10 +11,97 @@ https://www.khanacademy.org/computer-programming/scene-management-nov6/512407997
 ###FSM:  States, storyState  
 We can use an FSM structure if we have a finite set of possible states for the system.  For this example, we have 3 scenes, so we can say we have 3 states.  In addition, we need a variable to keep track of the active State, here we'll use `var storyState` and we need to initialize it to a valid and meaningful value.  
 
-   var storyState = 1; // can have values 1, 2, 3 
+   var currentState = 1; // can have values 1, 2, 3 
    
   ###Events:  
   We need to define events that can change the state of the system.  We can use the keypress event, we can say that the RIGHT arrow key is an event that will change to the next scene.  We can also say that the LEFT arrow key can change the scene back to the previous scene.  
   
   
+###Example Program
+In the program below, we define currentState to keep track of the current state, We define KeyPress events that listen for LEFT and RIGHT arrow keys to be pressed, if these buttons are pressed,  the nextScene( ) or prevScene() functions are called to determine which is the next scene to be set as the currentState and which scene to draw;
+
+
+```java
+  
+var currentState = 1; ///other valid values are 2, 3
+var moonAngle = 220;  
+
+var drawScene1 = function(){
+    fill(255, 0, 0);
+    rect( 0,0, width, height);
+    fill(20, 19, 19);
+    text("Scene 1", 200,200);
+};
+
+var drawScene2 = function(angle){
+    fill(30, 0, 255);
+    rect( 0,0, width, height);
+    pushMatrix();
+    translate(width/2, height);
+    rotate( angle);
+    fill(255, 247, 247);
+    ellipse( 300, 0,50,50);
+    popMatrix();
+    fill(20, 19, 19);
+    text("Scene 2", 200,200);
+};
+
+var drawScene3 = function(){
+    fill(3, 245, 39);
+    rect( 0,0, width, height);
+    fill(20, 19, 19);
+    text("Scene 3", 200,200);
+};
+
+
+///logic to manage scene changes
+var nextScene = function(){
+    if( currentState === 1){
+        currentState = 2; //change state
+        moonAngle =220;
+        drawScene2();
+    }
+    else if( currentState === 2){
+        currentState = 3;
+        drawScene3();
+    }
+    
+};
+
+var prevScene = function(){
+    if( currentState === 2){
+        currentState =1;
+        drawScene1();
+    }
+    else if (currentState ===3){
+        currentState =2;
+        moonAngle =220;
+        drawScene2();
+    }
+};
+
+///Start the program
+drawScene1();
+
+var draw= function() {
+    if(currentState === 2 ){
+     drawScene2(moonAngle  );
+     moonAngle+= 0.25;
+    }
+};
+
+var keyPressed = function(){
+    if( key.code === CODED){
+        if( keyCode === RIGHT){
+            nextScene(); 
+        }else if(keyCode === LEFT){
+            prevScene();
+        }
+        
+    }
+};
+  
+
+```
+
 

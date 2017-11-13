@@ -13,7 +13,8 @@ https://www.khanacademy.org/computer-programming/simple-button/5482448616357888
 
 In the code below, we have a function to draw a button, where the color of the button changes depending on the global state variable: buttonOn.  This state variable has it's value changed in the mouseClicked function if the button was clicked.  The button starts in the 'off' state, where buttonOn is set to false.  Each time the mouse is clicked while it's within the button's boundary, the value of buttonOn is reversed, if it was true, then it's set to false.  This creates a toggle button that changes between being on and off.  Within the drawButton function, the fill color for the button is determined based on the state of this buttonOn variable.  For this course, we'll treat state variables as global objects since we need to check the value within the mouseClicked() or mousePressed function.
 
-```
+
+```java
 var x = 100;
 var y = 100;
 var w = 100;
@@ -41,7 +42,6 @@ var mouseClicked = function(){
     if( mouseX > x && mouseX < x+w && mouseY > y && mouseY < y + h){
         buttonOn = !buttonOn;  //toggle button between on and off
     }
-    
 };
 
 ```
