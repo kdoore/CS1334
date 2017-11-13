@@ -12,15 +12,15 @@ To create a timer, you can use an elapsed time calculation where you create a va
 
 
 
-```
-  var initialTime = millis(); //called once at beginning
+```java
+    var initialTime = millis(); //called once at beginning
 
-var draw=function(){
-var elapsedTime = millis() - initialTime;
-if (elapsedTime > 3000){ // 3 seconds has passed
-   println("3 seconds");
-   initialTime = millis(); //reset initial time
-}
+    var draw=function(){
+    var elapsedTime = millis() - initialTime;
+    if (elapsedTime > 3000){ // 3 seconds has passed
+       println("3 seconds");
+    initialTime = millis(); //reset initial time
+    }
 };
 ```
 
