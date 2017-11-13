@@ -64,15 +64,13 @@ var btn1 = {
     h: 50
 };
   
-      
+ //function that takes an object literal      
 var drawButton= function( btn ){
-  
-       fill( 255,0,0);
-       rect( btn.x, btn.y, btn.w, btn.h);
-    
-        } 
+     fill( 255,0,0);
+     rect( btn.x, btn.y, btn.w, btn.h);
+   } 
 
- drawButton( btn1 );    //call the function
+drawButton( btn1 );    //call the function
 ```
 
 
