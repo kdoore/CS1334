@@ -46,8 +46,6 @@ var mouseClicked = function(){
 
 ```
 
-
-
 ###Javascript Object Literals
 Javascript has a convenient way to store a group of data that is all related to 1 object, object literal notation. For using Javascript object literals, you will a global variable with a code block that contains property name: attribute value pairs, these are separated by commas.
 
