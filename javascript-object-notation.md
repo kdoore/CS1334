@@ -51,6 +51,8 @@ Javascript has a convenient way to store a group of data that is all related to 
 
 In the code below we can see that we've created an object literal with the name: btn1
 
+Example Code: [https://www.khanacademy.org/computer-programming/button-with-object-literal-data/4584211168559104](https://www.khanacademy.org/computer-programming/button-with-object-literal-data/4584211168559104)
+
 this object can access any of it's property: value pairs
 
 ```java
