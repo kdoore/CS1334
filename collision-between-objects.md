@@ -89,7 +89,9 @@ var checkCollision = function( bX, bY, bR, tX, tY, tW, tH)
    return isColliding; //return result of calculation: true or false
 };
 
-
-
 ```
+
+###Animating the Ball
+
+
 
