@@ -28,4 +28,5 @@
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_shortcuts.md)
   * [Repetition - Loops](repetition-loops.md)
+* [KeyPress Logic](keypress-logic.md)
 
