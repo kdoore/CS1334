@@ -16,6 +16,7 @@
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
 * [Project 4 - Animation Logic](project-4-animation-logic.md)
 * [Arrays](arrays.md)
+* [KeyPress Logic](keypress-logic.md)
 * [Time](time.md)
 * [Collision between objects](collision-between-objects.md)
 * [Scene Management - State Variables](scene-management-state-variables.md)
@@ -28,5 +29,4 @@
   * [Logical Operators ](logical_operators.md)
   * [Numerical Operator Shortcuts](numerical_shortcuts.md)
   * [Repetition - Loops](repetition-loops.md)
-* [KeyPress Logic](keypress-logic.md)
 
