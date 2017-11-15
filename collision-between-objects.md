@@ -43,12 +43,9 @@ var drawTarget = function( tX, tY, tW, tH){
 
 ```
 
-
-
 ###KeyPress to move the target:
 In the draw function, we'll check if any keyIsPressed, and then check to see if the current keyCode is UP or DOWN.
 
- 
 
 ```java
 var draw = function(){
@@ -71,9 +68,12 @@ if(keyIsPressed){
 
 ###Check Collision
 //parameters: we need to pass in all object geometry to test for collision
+
+
+```java
 var checkCollision = function( bX, bY, bR, tX, tY, tW, tH)
 {
-   var isColliding = false;
+   var isColliding = false; //assume no collision as default
    //Conditions where ball intersects with edges of the target
   
    var leftEdgeCondition = (bX + bR) > tX;        //rt edge of ball
@@ -83,10 +83,13 @@ var checkCollision = function( bX, bY, bR, tX, tY, tW, tH)
    
     //All conditions must be true for intersection / collision to occur
    if( leftEdgeCondition && rightEdgeCondition && topEdgeCondition && bottomEdgeCondition){
-       isColliding = true;
+       isColliding = true; //change return value to true
      //  println("Colliding");
    }
-   return isColliding; 
+   return isColliding; //return result of calculation: true or false
 };
 
+
+
+```
 
