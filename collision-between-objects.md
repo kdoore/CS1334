@@ -96,6 +96,53 @@ In this example, the ball's animation is that it bounces between the left and ri
 
 In this example, this code is written directly in the draw loop.
 
+Here's the full code for the draw function:
+     - check for keyPressed to change the value of targetY.  
+     - check for ball hitting either wall - reverse speed
+     - check for collision with target - reverse speed
+     - update ball's position by adding speed
+     - draw Ball
+     - draw Target
+
+
+
+```java
+var draw= function() {
+    background(200);
+    //change target position if up or down arrows are being pressed
+     if(keyIsPressed){
+        if( key.code === CODED){
+            if(keyCode === UP){
+                targetY--;
+            }
+            else if(keyCode === DOWN){
+                targetY++;
+            }
+        }
+    }// end check for keyIsPressed
+    
+    //Check for Collisions - if collision occurs, reverse ball speed
+     //check for collision with walls
+    if( ballX > 400 || ballX < 0){
+       bSpeed *= -1;
+    }
+     //check for collision with target 
+    var targetCollision = checkCollision( ballX, ballY, ballR, targetX, targetY, targetW, targetH);
+    if( targetCollision ){
+        bSpeed *= -1;
+    }
+    
+    ballX += bSpeed;  //change ball position by adding speed
+    
+    //draw both objects
+    drawBall(ballX, ballY, ballR);
+    drawTarget( targetX, targetY, targetW, targetH);
+};
+```
+
+
+
+
 
 
 
