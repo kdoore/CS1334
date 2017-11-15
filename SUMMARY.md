@@ -17,6 +17,7 @@
 * [Project 4 - Animation Logic](project-4-animation-logic.md)
 * [Arrays](arrays.md)
 * [Time](time.md)
+* [Collision between objects](collision-between-objects.md)
 * [Scene Management - State Variables](scene-management-state-variables.md)
 * [Buttons](javascript-object-notation.md)
 * [Javascript Syntax](javascript_syntax.md)
