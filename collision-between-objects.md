@@ -92,6 +92,14 @@ var checkCollision = function( bX, bY, bR, tX, tY, tW, tH)
 ```
 
 ###Animating the Ball
+In this example, the ball's animation is that it bounces between the left and right edges of the canvas, it also bounces off the target if collision has occurred.  Animation can be controlled using a variable for speed, where the speed is reversed when collisions occur.
+
+In this example, this code is written directly in the draw loop.
+
+
+
+
+
 
 
 
