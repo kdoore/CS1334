@@ -20,7 +20,7 @@ The target is a rectangle defined by the following:
     height: tH
 
 As seen in the image below, the geometries overlap on the left edge of the rectangle when the following is true: 
-    bX + bR > tX  //the right edge of the ball is larger than the left edge of the target
+    bX + bR > tX  //the right edge of the ball (bX + bR) is greater than than the left edge of the target ( tX );
     
 ![](/assets/Screenshot 2017-11-15 12.59.48.png)
 
