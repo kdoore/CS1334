@@ -10,6 +10,8 @@ Example Khan Academy Project:
 
 The example project below uses UP and DOWN arrows to change the value of variable: targetY, this is a global variable that's use to animate a rectangle by passing this value into the drawTarget function where it's used to control the y position of the rectangle.
 
+Example: [https://www.khanacademy.org/computer-programming/moving-target/5411884593774592](https://www.khanacademy.org/computer-programming/moving-target/5411884593774592)
+
 ```java
 var targetY = 100;
 var drawTarget = function( tX, tY, tW, tH){
