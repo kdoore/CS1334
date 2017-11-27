@@ -14,7 +14,7 @@ https://www.khanacademy.org/computing/computer-programming/programming-games-vis
  
 See example project - Khan Academy:  https://www.khanacademy.org/computer-programming/project-5-example-v2/5126765991624704
 
-
 [Gitbook - Scene Management](/scene-management-state-variables.md)
+
 
 
