@@ -91,8 +91,8 @@ To restart the animation within Scene2, we've created a button:  animationButton
 //This function initializes all animation variables for Scene 2, this is called
 //when entering Scene2, or when hitting the restart button inside scene2.
 var initializeScene2 = function(){
-    moonAngle =220;  //scene 2 
-    moonShadow = 20;
+    moonAngle =220;  //scene 2 background animation
+    moonShadow = 20; //scene 2 background animation
     
     angle=96;  //range:110 - 174 
     waveState="UP";  // reset Animation state variable
