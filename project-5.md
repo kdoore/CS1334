@@ -12,7 +12,11 @@ For our final project, we'll have 2 different Finite State Machines, since we ha
 You will follow the instructions for creating scenes in the Khan academy tutorials for: SceneManagement.
 https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations#programming-scenes
  
-See example project - Khan Academy:  https://www.khanacademy.org/computer-programming/project-5-example-v2/5126765991624704
+Example projects:
+SceneManagement with Character Animation:  https://www.khanacademy.org/computer-programming/project-5-example-v2/5126765991624704
+
+Simple SceneManagement:
+https://www.khanacademy.org/computer-programming/project-5-example/4912927631409152
 
 [Gitbook - Scene Management](/scene-management-state-variables.md)
 
