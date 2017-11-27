@@ -14,7 +14,7 @@ We can use an FSM structure if we have a finite set of possible states for the s
   We need to define events that can change the state of the system.  We can use the keypress event, we can say that the RIGHT arrow key is an event that will change to the next scene.  We can also say that the LEFT arrow key can change the scene back to the previous scene.  
   
   ###FSM Diagram 
-  The diagram below shows an example for scene management state-event logic where 3 events and 3 states are defined.  The FSM diagram captures the logic to control scene management, however, this is defined at an abstract level which is independent of any specific programming language.  The events listed: Start, Right, Left, are concept that could be implemented in a number of ways such as using keypress events or custom buttons, so the FSM specification _**gives a conceptual model of the event-driven system**_, where this system could be implemented using a wide variety of technology.  
+  The diagram below shows an example for scene management state-event logic where 3 events and 3 states are defined.  The FSM diagram captures the logic to control scene management, however, this is defined at an abstract level which is independent of any specific programming language.  The events listed: Start, Right, Left, are concept that could be implemented in a number of ways such as using keypress events or custom buttons, so the FSM specification  gives a conceptual model of the event-driven system, where this system could be implemented using a wide variety of technology.  
   
   ![](/assets/Screen Shot 2017-11-27 at 11.45.05 AM.png)
 
@@ -26,7 +26,6 @@ Start, Left, Right, Right, Left, Left, Right
 {%o3%} Scene3
 {%o4%} None of these
 {%endmcq%}
-
 
 ###Example Program
 
@@ -119,7 +118,3 @@ var keyPressed = function(){
 }; 
 
 ```
-
-
-
-
