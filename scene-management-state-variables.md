@@ -3,13 +3,13 @@
 In the Khan Academy code examples, they provide an example of how to design logic for showing game-type scenes.  The logic is the same as the Finite State Machine logic that we've used for our character.  
 
 ###Finite State Machine for Scene Management
-Finite State Machine structure can be used to design a system if we have a finite number of states, such that we can list them in a table or diagram.  In addition, we have a finite set of events that can cause the system to change state.  Finally, an FSM must have a memory-variable that keeps track of the current state of the system.
+Finite State Machine structure can be used to design a system if we have a finite number of states, such that we can list them in a table or diagram.  In addition, we have a finite set of events that can cause the system to change state.  Finally, an FSM must have one memory-variable that keeps track of the current state of the system.
 
 
 Example Project: 
 https://www.khanacademy.org/computer-programming/scene-management-nov6/5124079971139584
 
-###FSM:  States, storyState  
+###FSM:  States, currentState  
 We can use an FSM structure if we have a finite set of possible states for the system.  For this example, we have 3 scenes, so we can say we have 3 states.  In addition, we need a variable to keep track of the active State, here we'll use `var currentState` and we need to initialize it to a valid and meaningful value.  
 
    var currentState = 1; // can have values 1, 2, 3 
@@ -22,6 +22,14 @@ We can use an FSM structure if we have a finite set of possible states for the s
   
   ![](/assets/Screen Shot 2017-11-27 at 11.45.05 AM.png)
 
+{%mcq ans="o2"%}
+{%title%} If the following events occured, what would be the final state of the system
+Start, Left, Right, Right, Left, Left, Right ?
+{%o1%} Scene1
+{%o2%} Scene2
+{%o3%} Scene3
+{%o4%} None of these
+{%endmcq%}
 
 
 ###Example Program
@@ -112,11 +120,3 @@ var keyPressed = function(){
   
 
 ```
-
-{%mcq ans="o1"%}
-{%title%} This is a question?
-{%o1%} First option
-{%o2%} Second option
-{%o3%} Third option
-{%o4%} Fourth option
-{%endmcq%}
