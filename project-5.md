@@ -19,7 +19,7 @@ See example project - Khan Academy:  https://www.khanacademy.org/computer-progra
 ###Buttons
 In the example project, I have used object literal syntax to specify properties for 2 button objects.  This provides a nice way to organize, access, and modify data associated with a single object.
 
-Here is code to define 2 object literals, and example code to show how to use these objects in custom functions.  We use dot notation to access the properties 
+Here is code to define 2 object literals, and example code to show how to use these objects in custom functions.  We use dot notation to access the properties.   
 
 ```java
  
@@ -53,6 +53,31 @@ var drawButton=function( btn){
     fill(54, 54, 54);  //text fill is white
     text( btn.label, btn.x +10, btn.y + (btn.h/2) + 5);
 }; 
+
+//called from mouseClicked( )
+//to see if animation button was clicked
+var restartClicked = function( btn){
+     if( mouseX > btn.x && mouseX < btn.x + btn.w && mouseY > btn.y && mouseY < btn.y + btn.h){
+        initializeScene2();
+        btn.buttonOn = false;
+    }
+};
+
+//called from mouseClicked()
+//to check if nextButton is clicked
+var checkClicked = function( btn){
+     if( mouseX > btn.x && mouseX < btn.x + btn.w && mouseY > btn.y && mouseY < btn.y + btn.h){
+        nextScene();
+        btn.buttonOn = false;
+    }
+};
+
+
+//Processing mouseClicked event handler
+var mouseClicked=function(){
+   checkClicked( nextButton);
+   restartClicked( animationButton);
+};
       
 ```
 
