@@ -18,13 +18,14 @@ We can use an FSM structure if we have a finite set of possible states for the s
   We need to define events that can change the state of the system.  We can use the keypress event, we can say that the RIGHT arrow key is an event that will change to the next scene.  We can also say that the LEFT arrow key can change the scene back to the previous scene.  
   
   ###FSM Diagram 
-  The diagram below shows an example for scene management state-event logic where 3 events and 3 states are defined.  The FSM diagram captures the logic to control scene management, however, this is defined at an abstract level which is independent of any specific programming language.  The events listed: Start, Right, Left, are concept that could be implemented in a number of ways such as using keypress events or custom buttons, so the FSM specification _**gives a conceptual model of the event-driven system**_, where this system could be implemented using a wide variety of technology.
+  The diagram below shows an example for scene management state-event logic where 3 events and 3 states are defined.  The FSM diagram captures the logic to control scene management, however, this is defined at an abstract level which is independent of any specific programming language.  The events listed: Start, Right, Left, are concept that could be implemented in a number of ways such as using keypress events or custom buttons, so the FSM specification _**gives a conceptual model of the event-driven system**_, where this system could be implemented using a wide variety of technology.  
   
   ![](/assets/Screen Shot 2017-11-27 at 11.45.05 AM.png)
 
 
+
 ###Example Program
-In the program below, we define currentState to keep track of the current state, We define KeyPress events that listen for LEFT and RIGHT arrow keys to be pressed, if these buttons are pressed,  the nextScene( ) or prevScene() functions are called to determine which is the next scene to be set as the currentState and which scene to draw;
+In the program below, we define currentState to keep track of the current state, We define KeyPress events that listen for LEFT and RIGHT arrow keys to be pressed, if these buttons are pressed,  the nextScene( ) or prevScene() functions are called to determine which is the next scene to be set as the currentState and which scene to draw.  The nextScene( ) function provides one way to implement the left event from the FSM diagram above.  
 
 
 ```java
@@ -61,6 +62,7 @@ var drawScene3 = function(){
 
 
 ///logic to manage scene changes
+//Right event - logic
 var nextScene = function(){
     if( currentState === 1){
         currentState = 2; //change state
@@ -74,6 +76,7 @@ var nextScene = function(){
     
 };
 
+//Left event logic 
 var prevScene = function(){
     if( currentState === 2){
         currentState =1;
