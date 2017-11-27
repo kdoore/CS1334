@@ -16,5 +16,46 @@ See example project - Khan Academy:  https://www.khanacademy.org/computer-progra
 
 [Gitbook - Scene Management](/scene-management-state-variables.md)
 
+###Buttons
+In the example project, I have used object literal syntax to specify properties for 2 button objects.  This provides a nice way to organize, access, and modify data associated with a single object.
 
+Here is code to define 2 object literals, and example code to show how to use these objects in custom functions.  We use dot notation to access the properties 
+
+```java
+ 
+//use global object-literal for buttons
+//defines property and value pairs to be associated
+//with a single object-type variable
+    
+var nextButton = {
+    x: 316,  //property x has value 316
+    y: 14,
+    w: 68,
+    h: 28,
+    label: "Next >>",
+    buttonOn: false
+};
+
+var animationButton = {
+    x: 15,
+    y: 349,
+    w: 116,
+    h: 29,
+    label: "Restart Animation",
+    buttonOn: false
+};
+    
+//Function takes a btn object as an input parameter
+//inside the function use dot notation to access object properties
+var drawButton=function( btn){
+    fill(12, 201, 192);
+    rect( btn.x, btn.y, btn.w, btn.h);
+    fill(54, 54, 54);  //text fill is white
+    text( btn.label, btn.x +10, btn.y + (btn.h/2) + 5);
+}; 
+      
+```
+
+
+ 
 
