@@ -19,7 +19,7 @@ We can use an FSM structure if we have a finite set of possible states for the s
   ![](/assets/Screen Shot 2017-11-27 at 11.45.05 AM.png)
 
 {%mcq ans="o2"%}
-{%title%} If the following events occured, what would be the final state of the system
+{%title%} If the following events occured, what would be the final state of the system.  If state does not have a specified transition for a given event, then assume that input event causes no action. 
 Start, Left, Right, Right, Left, Left, Right ?
 {%o1%} Scene1
 {%o2%} Scene2
