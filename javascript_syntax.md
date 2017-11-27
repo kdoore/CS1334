@@ -8,6 +8,8 @@ This section will contain definitions and examples of javascript syntax rules th
 
 [Eloquent Javascript](http://eloquentjavascript.net/)
 
+[Learn Javascript - Gitbook](https://gitbookio.gitbooks.io/javascript/content/)
+
 ##Processing Resources
 
 [ProcessingJS.org](http://processingjs.org/) 
