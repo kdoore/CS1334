@@ -84,11 +84,20 @@ var mouseClicked=function(){
 ```
 
 ###Restart Animation:  InitializeScene2( ) Function
-To restart the animation within Scene2, we've created a button:  animationButton that is drawn inside the draw function if the currentState is Scene2. 
-
+To restart the animation within Scene2, we've created a button:  animationButton that is drawn inside the draw function if the currentState is Scene2. When the mouse is clicked, then animationButton checks to see if the mouse is within it's borders, if so, then it executes a function that resets all of the animation control variables back to their initial state, including changing the Animation state variable:  WaveState back to it's initial value: "UP", this is all that's required in order to restart the animation.
 
 
 ```java
+//This function initializes all animation variables for Scene 2, this is called
+//when entering Scene2, or when hitting the restart button inside scene2.
+var initializeScene2 = function(){
+    moonAngle =220;  //scene 2 
+    moonShadow = 20;
+    
+    angle=96;  //range:110 - 174 
+    waveState="UP";  // reset Animation state variable
+    count=0; 
+};
  
 var draw= function() {
     if(currentState === 2 ){
