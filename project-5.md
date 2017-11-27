@@ -62,7 +62,7 @@ var drawButton=function( btn){
 var restartClicked = function( btn){
      if( mouseX > btn.x && mouseX < btn.x + btn.w && mouseY > btn.y && mouseY < btn.y + btn.h){
         initializeScene2();
-        btn.buttonOn = false;
+        btn.buttonOn = false; ///turn off button
     }
 };
 
@@ -71,10 +71,9 @@ var restartClicked = function( btn){
 var checkClicked = function( btn){
      if( mouseX > btn.x && mouseX < btn.x + btn.w && mouseY > btn.y && mouseY < btn.y + btn.h){
         nextScene();
-        btn.buttonOn = false;
+        btn.buttonOn = false; //turn off button
     }
 };
-
 
 //Processing mouseClicked event handler
 var mouseClicked=function(){
@@ -85,6 +84,28 @@ var mouseClicked=function(){
 ```
 
 ###Restart Animation:  InitializeScene2( ) Function
+To restart the animation within Scene2, we've created a button:  animationButton that is drawn inside the draw function if the currentState is Scene2. 
 
+
+
+```java
  
+var draw= function() {
+    if(currentState === 2 ){
+        drawScene2( moonAngle  );
+        moonAngle+= 0.15;  //moon animation
+        moonShadow +=0.05;  //shadow animation
+     
+        ////ADD DRAW LOOP CODE FROM PROJECT 4 
+        checkCount();
+        angle = checkArmState(angle);
+        drawCharacter(x,y,angle); 
+        ///end of Project 4 code
+   
+        ///Draw Animation Reset Button
+        drawButton( animationButton);
+    } /
+
+
+```
 
