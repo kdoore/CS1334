@@ -5,10 +5,6 @@ In the Khan Academy code examples, they provide an example of how to design logi
 ###Finite State Machine for Scene Management
 Finite State Machine structure can be used to design a system if we have a finite number of states, such that we can list them in a table or diagram.  In addition, we have a finite set of events that can cause the system to change state.  Finally, an FSM must have one memory-variable that keeps track of the current state of the system.
 
-
-Example Project: 
-https://www.khanacademy.org/computer-programming/scene-management-nov6/5124079971139584
-
 ###FSM:  States, currentState  
 We can use an FSM structure if we have a finite set of possible states for the system.  For this example, we have 3 scenes, so we can say we have 3 states.  In addition, we need a variable to keep track of the active State, here we'll use `var currentState` and we need to initialize it to a valid and meaningful value.  
 
@@ -33,6 +29,10 @@ Start, Left, Right, Right, Left, Left, Right ?
 
 
 ###Example Program
+
+Example Project:
+https://www.khanacademy.org/computer-programming/scene-management-nov6/5124079971139584
+
 In the program below, we define currentState to keep track of the current state, We define KeyPress events that listen for LEFT and RIGHT arrow keys to be pressed, if these buttons are pressed,  the nextScene( ) or prevScene() functions are called to determine which is the next scene to be set as the currentState and which scene to draw.  The nextScene( ) function provides one way to implement the left event from the FSM diagram above.  
 
 
