@@ -16,10 +16,13 @@ See example project - Khan Academy:  https://www.khanacademy.org/computer-progra
 
 [Gitbook - Scene Management](/scene-management-state-variables.md)
 
-###Buttons
+###Buttons using Object Literal Syntax
 In the example project, I have used object literal syntax to specify properties for 2 button objects.  This provides a nice way to organize, access, and modify data associated with a single object.
 
-Here is code to define 2 object literals, and example code to show how to use these objects in custom functions.  We use dot notation to access the properties.   
+Here is code to define 2 object literals, and example code to show how to use these objects in custom functions.
+
+Inside mouseClicked( ), we call functions that we've designed to take a button object as input parameter. Within the custom functions: drawButton, restartClicked, and checkClicked, the button's properties are accessed using dot notation.  For both button objects, we've defined the same properties, we can easily add additional buttons to the project using the same format.   
+    
 
 ```java
  
@@ -81,6 +84,7 @@ var mouseClicked=function(){
       
 ```
 
+###Restart Animation:  InitializeScene2( ) Function
 
  
 
