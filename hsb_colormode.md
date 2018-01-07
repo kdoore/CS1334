@@ -11,7 +11,7 @@ Within this circular slice, we can see that the center of the circle is white, a
 ###Hue
 The hue value corresponds to the angle of rotation around the circle.  This image shows the hue angle incorrectly, for processing the hue values increase in the clockwise direction, with the 0 value at the 3 o'clock position. 
 
-![HSB Color](HSB_Cone.png)
+![](/assets/hsbColor.png)
 
 Image from: [TomJewett.com](http://www.tomjewett.com/colors/hsb.html)
 
