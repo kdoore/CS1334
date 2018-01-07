@@ -52,7 +52,6 @@ The yellow ellipse is animated, through translation of the origin, and rotation 
 ### Relative Positioning Animation - PushMatrix / PopMatrix
 Below is an example of how transforms can be used to create a simple character, we can use pushMatrix\(\) and popMatrix\(\) to save and retrieve canvas configuration settings as noted in the image below.  pushMatrix and popMatrix are designed to be used together, you call pushMatrix when you know that you will want to return to the current configuration.  This is common when trying to create symmetry relative to a fixed reference point like the character's nose.
 
-![](transforms.png)
 
 [Link to Code Example: Khan Academy Program with Transforms](https://www.khanacademy.org/computer-programming/transformations-pushmatrix-popmatrix/5558061535199232)
 
