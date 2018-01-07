@@ -5,7 +5,7 @@
 * [RGB Colormode](rgb-colormode.md)
 * [HSB Colormode](hsb_colormode.md)
 * [Animation](animation.md)
-* [Transforms](transforms.md)
+* [Geometric Transform Functions](transforms.md)
 * [Functions to Draw Characters](functions-to-draw-characters.md)
 * [Functions to Draw Flowers](functions-to-draw-flowers.md)
 * [Bounding Box Conditional Branching](bounding-box-conditional-branching.md)
