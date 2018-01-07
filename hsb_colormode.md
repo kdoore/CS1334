@@ -11,14 +11,14 @@ Within this circular slice, we can see that the center of the circle is white, a
 ###Hue
 The hue value corresponds to the angle of rotation around the circle.  This image shows the hue angle incorrectly, for processing the hue values increase in the clockwise direction, with the 0 value at the 3 o'clock position. 
 
-![](HSB_Cone.png)
+![HSB Color](HSB_Cone.png)
 
 Image from: [TomJewett.com](http://www.tomjewett.com/colors/hsb.html)
 
 ###Color Wheel
 To create a simple color-wheel, we can use the arc() function, in conjunction with the HSB colorMode().
 
-The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default.
+The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default input parameter.
 
 
 
