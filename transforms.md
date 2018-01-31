@@ -47,7 +47,7 @@ var draw = function(){
       translate( 0, 100); //shift origin vertically
       rotate( 30 ); 
       rect( 0, 0, 50, 50); //rotated rect drawn at 100,100
-    popMatrix();
+    popMatrix(); //undoes transforms since last pushMatrix( )
     //rectangle below is impacted by original translate(100,0), but none of the changes inside pushMatrix(), popMatrix( ) pair.
    
     rect( 0, 0, 50, 50); //rect drawn at: 100,0
