@@ -22,8 +22,11 @@ The resetMatrix\(\) function sets the origin back to the original, upper-left co
 var draw = function(){
    
     translate( 100, 100);
-    rect( 0, 0, 50, 50); //rect drawn at 100,100
+    rotate( 30 );
+    rect( 0, 0, 50, 50); //rotated rect drawn at 100,100
     resetMatrix();
+    //rectangle below is not impacted by prior transforms
+    //since resetMatrix reset to transforms to default 
     rect( 0, 0, 50, 50); //rect drawn at canvas origin: 0,0
 
 }
