@@ -33,9 +33,25 @@ var draw = function(){
 
 ```
 
-
-
 ### pushMatrix\(\), popMatrix\(\)
 
 The `pushMatrix()` function stores the current state of the transformation Matrix in a **stack** structure, it is like a snapshot is taken of the current transform values and that is saved for later use.  Then the `popMatrix()` function can be used to retrieve the most recent state of the transformation matrix that was stored on the **stack**
+pushMatrix and popMatrix must be used in pairs, pushMatrix is used to save the state of the transforms that have already been applied prior to pushMatrix( ) being called.  Once popMatrix() is called, all changes to transforms that happened after the most recent pushMatrix( ) are undone, but all prior transforms still impact shapes drawn after pushMatrix( ).  To summarize, any transforms set within a pair of pushMatrix( ) and popMatrix( )  functions do not impact any code outside of that pair of functions.  However, any transforms applied prior to pushMatrix( ) remain.  This allows for creating relationships between shapes such as a character's center point, and rotation that would occur at a character's shoulder, elbow, and wrist.
+
+```java
+
+var draw = function(){
+   
+    translate( 100, 0); //shift origin horizontal 
+    pushMatrix();
+      translate( 0, 100); //shift origin vertically
+      rotate( 30 ); 
+      rect( 0, 0, 50, 50); //rotated rect drawn at 100,100
+    popMatrix();
+    //rectangle below is impacted by original translate(100,0), but none of the changes inside pushMatrix(), popMatrix( ) pair.
+   
+    rect( 0, 0, 50, 50); //rect drawn at: 100,0
+}
+
+```
 
