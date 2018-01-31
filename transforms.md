@@ -55,3 +55,5 @@ var draw = function(){
 
 ```
 
+###rectMode( CENTER)
+The processing function:  rectMode( CENTER ); changes the way that rectangles are drawn.  All rectangles drawn after this line of code will have the x,y parameters used as the rectangle's center point.  This makes it easier to rotate rectangles around their center point.  This can be undone using rectMode(CORNER);
