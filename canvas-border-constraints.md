@@ -81,10 +81,9 @@ https://www.khanacademy.org/computer-programming/bouncing-ball/4909833776726016
 var ballX = 30;
 var ballY  = 25;
 var radius = 25;
-var speedY = 0;
+var speedY = 3;
 var speedX = 4;  //constant in x
-var accelerationY = 0.5;  //like gravity positive downwards
-
+//var acceleration - we could have a variable for acceleration
 
 //physics of simple object
 //position is updated by adding speed each frame
@@ -96,20 +95,16 @@ var drawBall= function(x,y, size){
     ellipse( x,y,size,size);
 };
 
-//here we are updating global variables within a function, we'd prefer to pass the values in as function input parameters, but we wouldn't be able to make changes to all variables outside the 
-var updateBallPositions = function(){
-    speedY += accelerationY;
-    ballY += speedY;
-    ballX += speedX;
-};
 
 var draw = function() {
     background( 0);
     
+    //draw ball using current ballX, ballY 
     drawBall(ballX,ballY, radius * 2);//pass in x, y, size
   
+  //CHECK FOR INTERSECTION WITH BORDERS
   //check position of ball - for intersection with boundaries 
-               
+  //if intersection, change direction of speed             
       if( ballX < radius || ballX > width-radius){ //check for impact with left or right border
 speedX = speedX * -1 ; //reverse speed on impact
 }
@@ -121,9 +116,11 @@ speedX = speedX * -1 ; //reverse speed on impact
           speedY = speedY * -1 ;  //reverse speed on impact
           ballY = height-radius-1; //reset position out of impact zone
      }
- 
- //after modifying speed and acceleration    
-     updateBallPositions( );  //no input parameters since we need to modify global values
+ //update position
+    ballX += speedX;
+    ballY += speedY;
+ //if using acceleration, here we would also update speed with acceleration  
+    
 };
 
 ```
