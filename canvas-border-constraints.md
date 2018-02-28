@@ -95,7 +95,7 @@ var speedX = 4;  //constant in x
 //physics of simple object
 //position is updated by adding speed each frame
 //speed is updated by adding acceleration each frame
-//change sign of speed when hitting borders
+//change the sign (direction) of speed when hitting borders
 
 var drawBall= function(x,y, size){
     fill(255, 0, 0);
