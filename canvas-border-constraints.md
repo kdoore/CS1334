@@ -75,7 +75,7 @@ if( ballX > width-radius || ballX < radius ){
  
  ![](/assets/Screenshot 2017-10-11 10.21.08.png)
 
-###Example Program with Vertical Acceleration
+###Example Program 
 In the program below, we consider the ball's radius when determining collision with the wall.  This way the ball looks like it's actually bouncing.  Our conditional expressions test to find out when the outer radius of the ball crosses the boundaries, then we take action depending on which border we've intersected with.  These can be individual if statements because we'll take different actions in each situation.  More than one of these conditions may occur at the same time, when the ball hits a corner, so we need to check that our code handles these situations correctly.
  
 https://www.khanacademy.org/computer-programming/bouncing-ball/4909833776726016
