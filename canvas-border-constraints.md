@@ -2,8 +2,10 @@
 
 Bounding Ball programs are a classic approach to learning how to work with constraints.  We want to make sure that when the ball hits a canvas border that we have logic to change the ball's direction.
 
+###Button Hit-Box Constraints - All conditions must be true
 This case is different than the button constraints, in the button situation we wanted to test if the mouse was within a rectangular space. To insure that the mouse was within the box, it was required that **all bounddry-conditions were true** when we compared the mouseX to the left and right sides of the box, and when we compared mouseY to the upper and lower edges of the button rectangle.  
 
+###Border Constraints, Check if any condition is true
 In this case, if **any** of the conditions are true, then we need to change the ball's speed, and we can define speed as having horizontal and vertical components.  It may be beneficial in this case not to have 1 large boolean expression, because we may want to do different actions when the ball intersects with the left, right walls, as compared to when it intersects with the floor and ceiling.  So, in this case, we can setup one if statement for the case when the ball hits the ceiling, and a different case when it hits the floor.  
 
 ###Initial Conditions and Border Glitching
