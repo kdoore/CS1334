@@ -2,12 +2,15 @@
 
 Bounding Ball programs are a classic approach to learning how to work with constraints.  We want to make sure that when the ball hits a canvas border that we have logic to change the ball's direction.
 
-This case is different than the button constraints, in the button situation we wanted to test if the mouse was within a rectangular space. To insure that the mouse was within the box, it was required that **all bounddry-conditions were true** when we compared the mouseX to the left and right sides of the box, and when we compared mouseY to the upper and lower edges of the button rectangle.  In this case, if any of the conditions are true, then we need to change the ball's speed.  It may be beneficial in this case not to have 1 large boolean expression, because we may want to do different actions when the ball intersects with the left, right walls, as compared to when it intersects with the floor and ceiling.  So, in this case, we can setup one if statement for the case when the ball hits the ceiling, and a different case when it hits the floor.  
+This case is different than the button constraints, in the button situation we wanted to test if the mouse was within a rectangular space. To insure that the mouse was within the box, it was required that **all bounddry-conditions were true** when we compared the mouseX to the left and right sides of the box, and when we compared mouseY to the upper and lower edges of the button rectangle.  
 
+In this case, if **any** of the conditions are true, then we need to change the ball's speed, and we can define speed as having horizontal and vertical components.  It may be beneficial in this case not to have 1 large boolean expression, because we may want to do different actions when the ball intersects with the left, right walls, as compared to when it intersects with the floor and ceiling.  So, in this case, we can setup one if statement for the case when the ball hits the ceiling, and a different case when it hits the floor.  
+
+###Initial Conditions and Border Glitching
  Initial conditions - we need to be careful defining our initial starting values for the ball's position, if the ball's initial position is already outside the boundary that we're testing for collision with, we may have the ball get stuck. Similarly, when intersection happens, we may need to move the ball outside the test region, just so it doesn't get stuck in a state where each frame it's speed changes direction, and it's hovering, stuck in limbo.  
  
 ###Simple Object Movement
-We can consider simple object movement in terms of position and speed. Acceleration can be included for a slightly more sophisticated approach.
+We can consider simple object movement in terms of position and speed. Acceleration can be included for a slightly more sophisticated approach.  
 
 ###Position and Speed
 The ball object has variables: ballX, ballY which store the values of it's position at any time.  For simple movement, we can simply increment position values during each execution of the draw( ) function.
@@ -15,6 +18,8 @@ The ball object has variables: ballX, ballY which store the values of it's posit
 ballX += 1;  //simplest case, update position with a constant value
 
 ballX += speed;  //create a variable, speed to keep track of the ball's speed
+
+speed += acceleration; // speed can be updated by acceleration each frame
 
 ###Collision Condition - Hitting a canvas boundary
 In the 1 dimensional case, where we're just focused on the object's x-position and horizontal movement, we can try to keep the ball within the canvas.  This involves 2 steps:
@@ -54,7 +59,7 @@ if( ballX > width-radius){  // ball edge at right border
     speed = -5;  //make speed negative
 }
 
-if( ballX < 0 + radius){  // ball edge at right border
+else if( ballX < 0 + radius){  // ball edge at right border
     speed = 5;  //make speed positive
 }
 
@@ -65,7 +70,7 @@ if( ballX < 0 + radius){  // ball edge at right border
 if( ballX > width-radius || ballX < radius ){
     speed = speed * -1;   //change sign of speed
                          //if positive, make negative, etc
-}
+   }
 ```
  
  ![](/assets/Screenshot 2017-10-11 10.21.08.png)
