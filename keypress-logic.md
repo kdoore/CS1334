@@ -35,7 +35,7 @@ var draw = function(){
 ```
 
 ###Processing keyPressed event:
-The example code below uses the processing keyPressed event function.  The code within the function is only executed when a key has been pressed, it's only executed one time, when a key has  
+The example code below uses the processing keyPressed event function.  The code within the function is only executed when a key has been pressed, it's only executed once per key-press event.  The example code below has logic that displays keys or sentences on the canvas based on the key that was pressed.  
 
 ```java
     
