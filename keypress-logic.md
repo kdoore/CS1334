@@ -34,4 +34,31 @@ var draw = function(){
 };
 ```
 
+###Processing keyPressed event:
+The example code below uses the processing keyPressed event function.  The code within the function is only executed when a key has been pressed, it's only executed one time, when a key has  
+
+```java
+    
+    var keyPressed = function( ){
+        fill(0);
+        text( key, mouseX,mouseY); //display current key
+    
+    // Conditionally display based on string value
+    if (key.toString() === '!') {  //type ! key
+        text("I'm excited too!!", 100, 150); 
+        }
+    if( key.code === 42) {  //type *  key
+        text("You’re a star", 100, 150);  
+        }
+    //check for special keys 
+    if( key.code === CODED){  //special keys
+        if(keyCode === UP){
+            text("UP", 100, 300);      
+        }    
+        text ("special key", 200,200);
+    } // end if
+        
+};     // end keyPressed function
+
+```
 
