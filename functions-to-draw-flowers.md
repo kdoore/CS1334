@@ -60,7 +60,7 @@ var drawFlower = function( baseX, baseY, stemX, stemY, stemAngle){
     translate( stemX, stemY);
     rotate(stemAngle); //placeholder - we might want to be able to rotate the flower before drawing it
     
-    drawFlower( ); //placeHolder until we get this code written
+    drawPetal( ); //placeHolder until we get this code written
     //fill(255,0,0); //red to mark origin
     //ellipse(0,0,10,10); //mark the origin so we can see it
     popMatrix();
