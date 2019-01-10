@@ -20,41 +20,28 @@ To create a simple color-wheel, we can use the arc() function, in conjunction wi
 
 The *Processing.js* ``arc()`` function takes 6 parameters: x, y, w, h, startDegree, endDegree.  In the Khan Academy, all angles use degree measurement as the default input parameter.
 
-
+![](/assets/Screen Shot 2019-01-09 at 5.54.10 PM.png)
 
 ```java
 
-//setup
+//setup configuration 
 
-colorMode(HSB);
-background(0, 0, 255);  //white in 
-noStroke();
+colorMode(HSB); 
+//fill( Hue, Saturation, Brightness)
 
-//declare and initialize variables
-var hueValue=0;  //the current color of the hueValue, will modified to map to the current HSB.
-var startDegree=0;  //the arc parameter that starts the arc, will be modified to draw new arcs
-var angleSlice=60; //the degree 'width' of each arc.  How much each arc is offset from the previous arc
-var endDegree=angleSlice; //the endpoint for an arc, the offset of size 'angleSlice', from the arc startDegree.
-translate(200,200);  //move the origin to the center of the canvas
+background(255); //white background
+var angleSize = 45; //change using number scrubber
+angleSize = constrain( angleSize, 1, 90); //make sure number is not 0 since it's used as a divisor
 
+var startDegree = 0;
+var numSlices = 360 / angleSize;
+var hueValue = 0;
 
-//using initialized values  Create first arc which is red
-fill(hueValue, 255, 255);
-//arc(x,y,w,h,start,stop)
-arc(0,0,300,300,startDegree,endDegree); //first arc
-//begin incrementing startDegree, endDegree, and hueValue
-
-
-while( startDegree <360 ){
- 
-    startDegree=startDegree+angleSlice;  //termination, we know that startDegree keeps incrementing and will eventually be larger than 360
-    endDegree=endDegree+angleSlice;
-    hueValue=(startDegree / 360) * 255;
-    // keep changing hue value, use that to color each arc
+for( var i =0; i< numSlices; i++){
+    hueValue = map( startDegree, 0, 360, 0,255);
     fill(hueValue, 255, 255);
-    //arc(x,y,w,h,start,stop)
-    arc(0,0,300,300,startDegree,endDegree); //first arc
-    
-} // end while-loop
+    arc (200,200, 300, 300, startDegree, startDegree + angleSize );
+    startDegree = startDegree + angleSize;
+}
 
 ```
