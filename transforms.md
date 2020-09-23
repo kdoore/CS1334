@@ -42,7 +42,7 @@ var drawShape2 = function( xPos, yPos ){
 
 ## Rotate\( someDegrees\)
 
-The processing rotate\( \) function rotates the canvas around the origin as a pivot point.  This can be a bit confusing.  It is almost always necessary to use the translate\( xDist, yDist \) function when using rotate\( \) because most of time you do not want to rotate from the upper left corner of the canvas.  So, first you must use translate\( \) so that you can move the origin to the desired pivot position, then call rotate\( \), then draw shapes, finally, call resetMatrix\( \) to put the origin back to the default position.  
+The processing r**otate\( \)** function rotates the canvas around the origin as a pivot point.  This can be a bit confusing.  It is **almost always necessary to use the translate\( xDist, yDist \) function when using rotate\( \)** because most of time you do not want to rotate from the upper left corner of the canvas.  So, first you must use translate\( \) so that you can move the origin to the desired pivot position, then call rotate\( \), then draw shapes, **finally, call resetMatrix\( \)** to put the origin back to the default position.  
 
 ```javascript
 //use transform, rotate functions - elegant
