@@ -1,33 +1,36 @@
+# Project 4 - Animation Logic
+
 Project 4 - Animation
 
-#Animation Based on Finite State Machine Logic
+## Animation Based on Finite State Machine Logic
 
-The example programs below give simplified examples of animation that is controlled using an animation `state ` variable and an animation `position` variable to control the animation.
+The example programs below give simplified examples of animation that is controlled using an animation `state` variable and an animation `position` variable to control the animation.
 
-###Simple Rotate Animation 
-In the example project below, a rotate animation is controlled by a State Variable:  `rotateState ` which can be in one of 3 possible states:  "UP", "DOWN", or "STOP".
+### Simple Rotate Animation
 
-This rotateState variable provides logic to control the animation using a [finite state machine](/finite-state-machine.md) structure.
+In the example project below, a rotate animation is controlled by a State Variable: `rotateState` which can be in one of 3 possible states: "UP", "DOWN", or "STOP".
+
+This rotateState variable provides logic to control the animation using a [finite state machine](finite-state-machine.md) structure.
 
 Example Khan Academy Programs:
 
-Rotate Animation: https://www.khanacademy.org/computer-programming/simpleanimation/6670336845873152
+Rotate Animation: [https://www.khanacademy.org/computer-programming/simpleanimation/6670336845873152](https://www.khanacademy.org/computer-programming/simpleanimation/6670336845873152)
 
 **Animation state variable: rotateState:** can be in one of 3 possible animation states: "UP", "DOWN", or "STOP"
 
-**Animations position variable:  angle.**
-    -  When in "UP" state, angle is incremented: angle++
-    -  When in "DOWN" state, angle is decremented: angle--
-    -  `angle` is restricted to range of values between minAngle and maxAngle.
+**Animations position variable: angle.**
+
+* When in "UP" state, angle is incremented: angle++
+* When in "DOWN" state, angle is decremented: angle--
+* `angle` is restricted to range of values between minAngle and maxAngle.
 
 **Animation events:**
-    -    When the `angle >= maxAngle`, then the animation state: rotateState is set to: "DOWN"
-    -    When `angle <= minAngle`, then animation state: rotateState is set to: "UP" 
-    -    When the count variable equals maxCount, rotateState is set to: "STOP" to stop the animation.
 
-**Animation of line and offset rectangle**
-![](/assets/Screenshot 2017-11-10 08.07.46.png)
+* When the `angle >= maxAngle`, then the animation state: rotateState is set to: "DOWN"
+* When `angle <= minAngle`, then animation state: rotateState is set to: "UP" 
+* When the count variable equals maxCount, rotateState is set to: "STOP" to stop the animation.
 
+**Animation of line and offset rectangle** ![](.gitbook/assets/Screenshot%202017-11-10%2008.07.46.png)
 
 ```java
 //Global variables:
@@ -104,15 +107,11 @@ var draw = function() {
   checkAngle ();
   checkCount();
 };
-
-
 ```
 
+### Additional Simplified Animation Examples
 
+[https://www.khanacademy.org/computer-programming/animation-demo-simple/5581835098324992](https://www.khanacademy.org/computer-programming/animation-demo-simple/5581835098324992)
 
+[https://www.khanacademy.org/computer-programming/simple-rotateanimation/6227637252587520](https://www.khanacademy.org/computer-programming/simple-rotateanimation/6227637252587520)
 
-###Additional Simplified Animation Examples
-
-https://www.khanacademy.org/computer-programming/animation-demo-simple/5581835098324992
-
-https://www.khanacademy.org/computer-programming/simple-rotateanimation/6227637252587520

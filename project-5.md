@@ -1,39 +1,36 @@
-#Project 5 - Scene Management
+# Project 5
 
-For project 5, you will be integrating scenes into your previous project.  We'll use a Finite State Machine to model the logic to manage changing scenes.  
+For project 5, you will be integrating scenes into your previous project. We'll use a Finite State Machine to model the logic to manage changing scenes.
 
-###Nested Finite State Machines 
-For our final project, we'll have 2 different Finite State Machines, since we had already implemented a FSM to control our character's animation.  So, the diagram below shows that there are nested FSM's in our project.  The FSM's are independent, each relies on it's own state variable to keep track of the current state.  We need to provide code to implement the conceptual model captured in each FSM's structure.
+## Nested Finite State Machines
 
-![](/assets/Screen Shot 2017-11-27 at 12.45.24 PM.png)
+For our final project, we'll have 2 different Finite State Machines, since we had already implemented a FSM to control our character's animation. So, the diagram below shows that there are nested FSM's in our project. The FSM's are independent, each relies on it's own state variable to keep track of the current state. We need to provide code to implement the conceptual model captured in each FSM's structure.
 
+![](.gitbook/assets/Screen%20Shot%202017-11-27%20at%2012.45.24%20PM.png)
 
-###Resources and Example Projects
-You will follow the instructions for creating scenes in the Khan academy tutorials for: SceneManagement.
-https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations#programming-scenes
- 
-Example projects:
-SceneManagement with Character Animation:  https://www.khanacademy.org/computer-programming/project-5-example-v2/5126765991624704
+## Resources and Example Projects
 
-Simple SceneManagement:
-https://www.khanacademy.org/computer-programming/project-5-example/4912927631409152
+You will follow the instructions for creating scenes in the Khan academy tutorials for: SceneManagement. [https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations\#programming-scenes](https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations#programming-scenes)
 
-[Gitbook - Scene Management](/scene-management-state-variables.md)
+Example projects: SceneManagement with Character Animation: [https://www.khanacademy.org/computer-programming/project-5-example-v2/5126765991624704](https://www.khanacademy.org/computer-programming/project-5-example-v2/5126765991624704)
 
-###Buttons using Object Literal Syntax
-In the example project, I have used object literal syntax to specify properties for 2 button objects.  This provides a nice way to organize, access, and modify data associated with a single object.
+Simple SceneManagement: [https://www.khanacademy.org/computer-programming/project-5-example/4912927631409152](https://www.khanacademy.org/computer-programming/project-5-example/4912927631409152)
+
+[Gitbook - Scene Management](scene-management-state-variables.md)
+
+## Buttons using Object Literal Syntax
+
+In the example project, I have used object literal syntax to specify properties for 2 button objects. This provides a nice way to organize, access, and modify data associated with a single object.
 
 Here is code to define 2 object literals, and example code to show how to use these objects in custom functions.
 
-Inside mouseClicked( ), we call functions that we've designed to take a button object as input parameter. Within the custom functions: drawButton, restartClicked, and checkClicked, the button's properties are accessed using dot notation.  For both button objects, we've defined the same properties, we can easily add additional buttons to the project using the same format.   
-    
+Inside mouseClicked\( \), we call functions that we've designed to take a button object as input parameter. Within the custom functions: drawButton, restartClicked, and checkClicked, the button's properties are accessed using dot notation. For both button objects, we've defined the same properties, we can easily add additional buttons to the project using the same format.
 
 ```java
- 
 //use global object-literal for buttons
 //defines property and value pairs to be associated
 //with a single object-type variable
-    
+
 var nextButton = {
     x: 316,  //property x has value 316
     y: 14,
@@ -51,7 +48,7 @@ var animationButton = {
     label: "Restart Animation",
     buttonOn: false
 };
-    
+
 //Function takes a btn object as an input parameter
 //inside the function use dot notation to access object properties
 var drawButton=function( btn){
@@ -84,12 +81,11 @@ var mouseClicked=function(){
    checkClicked( nextButton);
    restartClicked( animationButton);
 };
-      
 ```
 
-###Restart Animation:  InitializeScene2( ) Function
-To restart the animation within Scene2, we've created a button:  animationButton that is drawn inside the draw function if the currentState is Scene2. When the mouse is clicked, then animationButton checks to see if the mouse is within it's borders, if so, then it executes a function, `initializeScene2( )` that resets all of the animation control variables back to their initial state, including changing the Animation state variable:  WaveState back to it's initial value: "UP", count is reset to 0, angle is reset to it's initial value.
+## Restart Animation:  InitializeScene2\( \) Function
 
+To restart the animation within Scene2, we've created a button: animationButton that is drawn inside the draw function if the currentState is Scene2. When the mouse is clicked, then animationButton checks to see if the mouse is within it's borders, if so, then it executes a function, `initializeScene2( )` that resets all of the animation control variables back to their initial state, including changing the Animation state variable: WaveState back to it's initial value: "UP", count is reset to 0, angle is reset to it's initial value.
 
 ```java
 //This function initializes all animation variables for Scene 2, this is called
@@ -97,28 +93,26 @@ To restart the animation within Scene2, we've created a button:  animationButton
 var initializeScene2 = function(){
     moonAngle =220;  //scene 2 background animation
     moonShadow = 20; //scene 2 background animation
-    
+
     angle=96;  //range:110 - 174 
     waveState="UP";  // reset Animation state variable
     count=0; 
 };
- 
+
 var draw= function() {
     if(currentState === 2 ){
         drawScene2( moonAngle  );
         moonAngle+= 0.15;  //moon animation
         moonShadow +=0.05;  //shadow animation
-     
+
         ////ADD DRAW LOOP CODE FROM PROJECT 4 
         checkCount();
         angle = checkArmState(angle);
         drawCharacter(x,y,angle); 
         ///end of Project 4 code
-   
+
         ///Draw Animation Reset Button
         drawButton( animationButton);
     } /
-
-
 ```
 

@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 * [Algorithm](algorithm.md)
@@ -23,12 +23,12 @@
 * [Project 3 - Animation Specification - FSM](project-3-animation-specification-fsm.md)
 * [Project 4 - Animation Logic](project-4-animation-logic.md)
 * [Project 5](project-5.md)
-* [Javascript Syntax](javascript_syntax.md)
-  * [Variables](variables.md)
-  * [Indentifiers](indentifiers.md)
-  * [Functions](functions.md)
-  * [Variable Scope: Global or Local](variable_scope.md)
-  * [Logical Operators ](logical_operators.md)
-  * [Numerical Operator Shortcuts](numerical_shortcuts.md)
-  * [Repetition - Loops](repetition-loops.md)
+* [Javascript Syntax](javascript_syntax/README.md)
+  * [Variables](javascript_syntax/variables.md)
+  * [Indentifiers](javascript_syntax/indentifiers.md)
+  * [Functions](javascript_syntax/functions.md)
+  * [Variable Scope: Global or Local](javascript_syntax/variable_scope.md)
+  * [Logical Operators](javascript_syntax/logical_operators.md)
+  * [Numerical Operator Shortcuts](javascript_syntax/numerical_shortcuts.md)
+  * [Repetition - Loops](javascript_syntax/repetition-loops.md)
 
