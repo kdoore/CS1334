@@ -22,13 +22,13 @@ at the point:  \( 110, 220 \)
 
 ```javascript
 
-var drawShape1 = new function( xPos, yPos ){  
+var drawShape1 = function( xPos, yPos ){  
     fill(255, 0,0);
     rect( 10 + xPos, 20 + yPos, 50, 80) ; //adjust shape values, messy
-}
+};
 
 //use transform functions - elegant
-var drawShape2 = new function( xPos, yPos ){
+var drawShape2 = function( xPos, yPos ){
  translate( xPos, yPos); //move origin to xPos, yPos
  fill( 255, 0,0);
  rect( 10, 20, 50, 80 ); //draw shape relative to origin
@@ -46,7 +46,7 @@ The processing rotate\( \) function rotates the canvas around the origin as a pi
 
 ```javascript
 //use transform, rotate functions - elegant
-var drawShape3 = new function( xPos, yPos, angle ){
+var drawShape3 =  function( xPos, yPos, angle ){
  translate( xPos, yPos); //move origin to xPos, yPos
  rotate( angle );  // rotation is always around the origin
  fill( 255, 0,0);
