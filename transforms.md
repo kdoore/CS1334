@@ -21,7 +21,7 @@ at the point:  \( 110, 220 \)
 {% endhint %}
 
 ```javascript
-
+//messy approach 
 var drawShape1 = function( xPos, yPos ){  
     fill(255, 0,0);
     rect( 10 + xPos, 20 + yPos, 50, 80) ; //adjust shape values, messy
