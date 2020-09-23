@@ -12,9 +12,11 @@ The processing translate function moves the canvas origin xDist in the x directi
 
 ### Using translate with custom functions
 
-Translation can be very useful when writing a function that draws some shapes at a location specified as input parameters.  In the example code below, **where do you think the rectangle will be drawn relative to the default origin?**
+Translation can be very useful when writing a function that draws some shapes at a location specified as input parameters.  
 
 {% hint style="info" %}
+**Where do you think the rectangle will be drawn relative to the default origin?**
+
 at the point:  \( 110, 220 \)
 {% endhint %}
 
