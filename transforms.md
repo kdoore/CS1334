@@ -4,7 +4,11 @@ Transformations are functions that can be used to change the physical configurat
 
 * **translate\( x, y \)** //move the origin to position\(x,y\),then all shapes are now drawn relative to the new position of the origin. It is often easier to move the canvas origin, when trying to draw objects that have some geometric relation with each other, such as a joint or point of rotation.
 * **rotate\( angle \)** // rotate the canvas through angle \( degrees / radians \)in the clockwise direction for positive values of angle. All subsequent shapes are drawn on the rotated canvas, until resetMatrix\(\) or popMatrix\(\) have been called.
-* **scale\( w, h\)** // changes the size of the canvas: larger or smaller - the input parameters are represent scaling using multiplication,  where the default is scale\( 1.0, 1.0\) using values for w, h that are less than 1.0 will make the canvas smaller in size.  Values greater than 1.0 will make the canvas larger: 2.0 will double the canvas.
+* **scale\( w, h\)** // changes the size of the canvas: larger or smaller - the input parameters are represent scaling using multiplication,  where the default is scale\( 1.0, 1.0\) using values for w, h that are less than 1.0 will make the canvas smaller in size.  Values greater than 1.0 will make the canvas larger: scale\( 2.0, 1.0\) will double the canvas width, with no change in height.  Using negative values will flip / mirror the canvas.
+* **resetMatrix\( \)** // returns all transforms to their default values
+* **pushMatrix\( \)** // temporarily stores prior transform values \(snapshot\) // isolates transforms so they don't impact code outside of a pushMatrix\( \), popMatrix\( \) pair.
+* **popMatrix\( \)** // restores the last stored transforms in the matching pushMatrix\( \) pair
+* **pushMatrix\( \), popMatrix\( \)** must be used in a pair, and can be nested to create relative transforms - pushMatrix stores prior transforms using a stack data-structure so that the most recently stored value can be accessed using popMatrix\( \), it returns the most recently stored values from the 'top' of the 'stack' of stored snapshots
 
 ### translate\( xDist, yDist\)
 
