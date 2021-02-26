@@ -4,7 +4,7 @@ Transformations are functions that can be used to change the physical configurat
 
 * **translate\( x, y \)** //move the origin to position\(x,y\),then all shapes are now drawn relative to the new position of the origin. It is often easier to move the canvas origin, when trying to draw objects that have some geometric relation with each other, such as a joint or point of rotation.
 * **rotate\( angle \)** // rotate the canvas through angle \( degrees / radians \)in the clockwise direction for positive values of angle. All subsequent shapes are drawn on the rotated canvas, until resetMatrix\(\) or popMatrix\(\) have been called.
-* **scale\( x, y \)** // changes the size of the canvas: larger or smaller - also impacts strokeWeight
+* **scale\( w, h\)** // changes the size of the canvas: larger or smaller - the input parameters are represent scaling using multiplication,  where the default is scale\( 1.0, 1.0\) using values for w, h that are less than 1.0 will make the canvas smaller in size.  Values greater than 1.0 will make the canvas larger: 2.0 will double the canvas.
 
 ### translate\( xDist, yDist\)
 
