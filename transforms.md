@@ -12,13 +12,15 @@ The processing translate function moves the canvas origin xDist in the x directi
 
 ### Using translate with custom functions
 
-Translation can be very useful when writing a function that draws some shapes at a location specified as input parameters.  
+Translation can be very useful when writing a function that draws some shapes at a location specified as input parameters.    
+  
+There are 3 different versions of the drawShape functions below, which provide examples of how to use transforms when writing custom functions because it allows a shape to be repositioned by using translate\( \) within the function, rather than adding the xPos, yPos variables to each shape's input arguments.   
 
-{% hint style="info" %}
-**Where do you think the rectangle will be drawn relative to the default origin?**
-
-at the point:  \( 110, 220 \)
-{% endhint %}
+**Using  translate\( \), resetMatrix\( \) - Problematic**   
+**Important Caution:**  **drawShape2** uses translate\( \) within the function to simplify the code used to create individual shapes, however, it is **not good to use resetMatrix\( \)** to undo translate\( \) within a function....as **it will undo all transforms** that may have happened prior to the function being called..it will **cause unexpected behavior - side effects.**  
+  
+**Best Approach:  translate\( \), pushMatrix\( \), popMatrix\( \)**  
+As shown in drawShape3\( ...\), using pairs of pushMatrix\( \), popMatrix\( \). Any transforms used between pairs of pushMatrix\( \), popMatrix\( \) will not impact code outside of that pair.  pushMatrix\( \) stores a snapshot of any prior transforms, popMatrix\( \) uses the stored shapshot to return the transformMatrix to the same state it was in prior to pushMatrix\( \).  Therefore, any transforms used within the function will not impact code outside of the function.  It is important that custom functions do not cause weird side-effects, therefore: D**o not ever use resetMatrix\( \) within a custom function.**
 
 ```javascript
 //messy approach 
@@ -27,18 +29,44 @@ var drawShape1 = function( xPos, yPos ){
     rect( 10 + xPos, 20 + yPos, 50, 80) ; //adjust shape values, messy
 };
 
-//use transform functions - elegant
+//better approach, use transform within the functions
+//BIG POTENTIAL PROBLEMS - see comments about using resetMatrix( ) in a function
 var drawShape2 = function( xPos, yPos ){
  translate( xPos, yPos); //move origin to xPos, yPos
  fill( 255, 0,0);
  rect( 10, 20, 50, 80 ); //draw shape relative to origin
- resetMatrix( );  //move origin back to default location
+ //IT IS BEST to UNDO all transforms used within functions  
+ //NOTE: resetMatrix() will clear transforms outside of the function - NOT IDEAL
+ //WARNING - don't use resetMatrix( ) inside a function - it can cause odd side-effects
+ resetMatrix( );  //move origin back to default - 
+   };
+  
+  //BEST APPROACH, use pushMatrix( ), popMatrix( ) within the function
+  var drawShape3 = function( xPos, yPos ){
+  pushMatrix(); //stores a snapshot of prior transforms
+  translate( xPos, yPos); //move origin to xPos, yPos
+  fill( 255, 0,0);
+  rect( 10, 20, 50, 80 ); //draw shape relative to origin
+  popMatrix( );  //reset prior transforms
   };
   
    //call the function
   drawShape1( 100, 200); 
   drawShape2( 100, 200); 
+  
+  //if using transform prior to calling the function
+  //then version: drawShape3 will keep the prior transform undisturbed
+  translate( 100, 100); //
+  drawShape3( 100, 100); //displayed at 200, 200
+  drawShape3( 0, 0 );  //displayed at 100,100 due to translate still in effect
+  resetMatrix();
 ```
+
+{% hint style="info" %}
+**Where do you think the rectangle will be drawn relative to the default origin?**
+
+at the point:  \( 110, 220 \)
+{% endhint %}
 
 ## Rotate\( someDegrees\)
 
