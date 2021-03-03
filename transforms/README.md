@@ -4,7 +4,7 @@ Transformations are functions that can be used to change the physical configurat
 
 Link to Code Example used in video:  [https://www.khanacademy.org/computer-programming/transforms-and-functions/4932293596758016](https://www.khanacademy.org/computer-programming/transforms-and-functions/4932293596758016)
 
-
+{% embed url="https://youtu.be/8L4daDK3S8o" caption="Video of Using Transform Functions" %}
 
 * **translate\( x-offset, y-offset \)** //moves the origin:  in x-dimension by x-offset amount, in y-dimension by y-offset. All shapes are now drawn relative to the new position of the origin. It is often easier to move the canvas origin, when trying to draw objects that have some geometric relation with each other, such as a joint or center of rotation.
 * **rotate\( angle \)** // rotate the canvas through angle \( degrees / radians \)in the clockwise direction for positive values of angle. All subsequent shapes are drawn on the rotated canvas, until resetMatrix\(\) or popMatrix\(\) have been called.
