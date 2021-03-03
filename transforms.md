@@ -10,9 +10,9 @@ Transformations are functions that can be used to change the physical configurat
 * **popMatrix\( \)** // restores the last stored transforms in the matching pushMatrix\( \) pair
 * **pushMatrix\( \), popMatrix\( \)** must be used in a pair, and can be nested to create relative transforms - pushMatrix stores prior transforms using a stack data-structure so that the most recently stored value can be accessed using popMatrix\( \), it returns the most recently stored values from the 'top' of the 'stack' of stored snapshots
 
-### translate\( xDist, yDist\)
+### translate\( x-offset, y-offset\)
 
-The processing translate function moves the canvas origin xDist in the x direction, yDist in the y direction.  
+The processing translate function moves the canvas origin x-offset in the x direction, y-offset in the y direction.  
 
 ### Using translate with custom functions
 
